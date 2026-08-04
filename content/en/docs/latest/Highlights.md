@@ -19,7 +19,7 @@ Support for many formats and character sets
   - Multiple language subtitles? Legacy programs without Unicode support? No problem, Aegisub has full support for both Unicode and most common legacy encodings; both reading and writing.
 
 Powerful video mode
-: - Nearly all video formats are supported out of the box, but if that isn't enough, Aegisub can also use your system's DirectShow environment to open any format you can play in Windows Media Player.
+: - Nearly all video formats are supported out of the box.
   - Automatic live preview of subtitles updated as you type, showing you exactly what the subtitles will look like in the player.
   - Full support for variable framerate video and Matroska timecodes. Capable of reading timecodes directly from Matroska files for seamless VFR work.
   - Problems with anamorphic video? Overscan? Aegisub has the tools to handle it.

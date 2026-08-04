@@ -23,61 +23,15 @@ use a dummy (mockup, blank) video, press _Use dummy video_.
 
 Aegisub normally uses [FFMS2](https://github.com/FFMS/ffms2) to open
 video, which supports opening nearly all common A/V formats, and many uncommon
-ones. For a full list of codecs supported, see [FFmpeg](https://ffmpeg.org/) or
-[Libav](https://libav.org/) documentation. Note that FFMS2 current has issues
-with interlaced H.264.
+ones. For a full list of codecs supported, see [FFmpeg](https://ffmpeg.org/) documentation.
 
-On Windows, [Avisynth](https://avisynth.org/mediawiki/Main_Page) can be used
-instead of FFMS2. When opening via _Avisynth_, Aegisub will try several source
-functions to find the best choice:
-
-Import()
-: Avisynth builtin function. Used to load Avisynth scripts, never used
-  for anything else.
-
-AviSource()
-: Avisynth builtin function. AviSource uses the system's Video for
-  Windows (VfW) decoder to open the video, which for some esoteric
-  formats may be the best or only way to open a file. Only supports .avi
-  files, for obvious reasons. If AviSource cannot open a file, DSS2 is
-  tried, followed by DirectShowSource.
-
-MPEG2Source()
-: Only used to load .d2v files (DVD2AVI project files; otherwise known
-  as indexed .VOB's ripped from DVD's). Tries to use neuron2's
-  [DGDecode](https://neuron2.net/dgmpgdec/dgmpgdec.html) to open the file;
-  if Aegisub can't find or load that it'll try the old mpeg2dec3.dll
-  instead; if that too fails, returns an error. This is the most
-  reliable way to open DVD video in Aegisub.
-
-DSS2()
-: Tries to find, load and use Haali's DirectShowSource2 plugin (comes
-  with the [Haali Media Splitter](https://haali.cs.msu.ru/mkv/) package
-  and with the [CCCP](https://cccp-project.net); the Avisynth plugin is
-  _avss.dll_, you need to manually put it somewhere where Aegisub or
-  Avisynth can find it, see below). That will in turn try to use your
-  computer's DirectShow environment to open the file. Theoretically any
-  file renderable by DirectShow should be supported, but since you are at
-  the mercy of third-party splitters and decoders, your mileage may vary.
-  As a rule of thumb, if it's playable in Windows Media Player, Aegisub
-  should be able to load it. Do note that DSS2 converts variable
-  framerate files to constant.  Usually this is what you want and expect
-  but if you're doing proper VFR subtitles, it isn't.
-
-DirectShowSource()
-: Uses DirectShowSource() (which ships with Avisynth) to try to load
-  the file. Basically the same as DSS2, but far less reliable and it
-  doesn't convert VFR to CFR. Warning: DSS is known to have problems with
-  frame-accurate seeking. Do not use it if you can avoid it.
-
-Note that [VFR]({{< relref "Video#variable-framerate-video" >}}) is not supported by the
-Avisynth provider. In some cases loading [external timecodes]({{< relref "Video#timecodes" >}})
-may work, but in practice it will often result in a broken mess.
-
-Aegisub will look for Avisynth plugins in its
-[?data]({{< relref "Aegisub_path_specifiers" >}}) directory (generally the folder where
-aegisub32.exe is, on Windows). You can also put them directly in your Avisynth
-plugins folder to get them autoloaded.
+For best results, make sure your video is muxed in a good container format like
+MP4, MKV, or WebM. Opening transport streams (e.g. m2ts files) or raw streams
+(e.g. .h264 files) may result in slower seeking and can sometimes even cause
+inaccurate decoding, resulting in frames being corrupted or displayed at the
+wrong times. Remuxing such files to MKV using
+[MKVToolNix](https://www.bunkus.org/videotools/mkvtoolnix/) will ensure faster
+and reliable seeking.
 
 ### Dummy video
 
