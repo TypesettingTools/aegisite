@@ -77,6 +77,8 @@ For example, if you have two lines already snapped to each other but want to shi
 
 Holding alt will make you drag all selected lines (both start and end times).
 
+Middle-clicking the audio display will make the video (if one is loaded) jump to the clicked timestamp.
+
 ### Timing protips
 
 If you want to finish timing your movie or episode within any reasonable
