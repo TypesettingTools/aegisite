@@ -106,6 +106,42 @@ Duration
 : The duration of the video in frames. Below this number is shown the
   resulting duration in hours/minutes/seconds.
 
+## Navigating the video
+
+### Through time
+
+You can step through the video using any of the following methods:
+- Clicking or dragging the slider below the video to do rough seeking
+- Scrolling over the slider below the video to go frame by frame, or holding
+  shift while scrolling to go from keyframe to keyframe
+- Using the arrow keys to step frame by frame, holding shift and pressing the
+  arrow keys to go from keyframe to keyframe, or holding ctrl and pressing the
+  arrow keys to step by a (configurable) larger number of frames at a time
+- Jumping to the start times of lines by double-clicking them in the subtitle
+  grid, or, if automatic seeking is enabled, simply selecting them.
+- Using Ctrl+1 and Ctrl+2 or the corresponding buttons in the main toolbar to
+  jump to the start or end time of the current subtitle line
+- Middle-clicking or middle-click-dragging on the audio display
+- Playing the video using the play button (but read the following section!)
+
+### Through space
+
+By scrolling the mouse wheel over the video or using the size dropdown below
+it, you can adjust the size of the video display inside Aegisub. Alternatively,
+you can detach the video in the video menu to make it a separate, freely
+resizable window.
+
+Middle-click-dragging the video display will pan the video and holding ctrl
+while scrolling on the video display will zoom in and out. The zoom and pan can
+be reset by right-clicking the video display and selecting "Reset Video Pan".
+
+Touchpad users can zoom using pinching gestures and pan by holding shift while
+two-finger-scrolling on the touchpad.
+
+The mapping of scroll/ctrl-scroll/shift-scroll to resizing, zooming, and
+panning can be configured in the settings. For example, touchpad users may
+prefer to map scrolling (without shift) to panning rather than zooming.
+
 ## Playing video
 
 Aegisub does support playing back video, but it has been widely debated if it
