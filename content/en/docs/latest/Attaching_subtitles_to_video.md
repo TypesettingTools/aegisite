@@ -64,7 +64,7 @@ a lot of time and extra work to the release process.
 
 ## Softsubbing
 
-Softsubbing is a method that keeps subtitles seperate from the video and relies
+Softsubbing is a method that keeps subtitles separate from the video and relies
 on the playback device to combine the two when the video is being played. This
 method can be best compared to subtitles on most DVDs. The subtitling can be
 turned on or off as needed, and multiple languages can be supported with just
