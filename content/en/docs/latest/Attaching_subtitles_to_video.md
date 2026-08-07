@@ -106,10 +106,6 @@ result, they might not look the same as the subtitler intended. In some cases,
 the playback device might not support the subtitle format, or might have bugs
 with it.
 
-The AVI file format is not reliable for supporting softsubs, if you plan to use
-it. Please note that Matroska (MKV) is very well supported by computers, so
-this isn't a major negative.
-
 Subtitles with effects added (usually for karaoke) take up a lot of processing
 time, and may cause playback issues if the device cannot handle the processing
 requirements. A solution for this is to hardsub the complex parts such as
@@ -128,7 +124,8 @@ suggestions to guide you. These are based on making a digital format for
 playback on a computer system.
 
 If you want your file playable on the largest range of computers, operating
-systems, and small plastic toys,you will want to hardsub.
+systems, smartphones, televisions, and small plastic toys, you will want to
+hardsub.
 
 If your audience will be running on a platform where your subtitle format is
 well-supported, softsubs are a good idea.
@@ -139,6 +136,91 @@ not want to have subtitles enabled at all, softsubs are your only option.
 If you want to speed up your release process, use softsubs. They are faster to
 fix if an error is found, and allow you to release as soon as the subtitles are
 done, rather than waiting a few hours for the video to be encoded.
+
+## Softsubbing workflows
+
+Not every video player or video format fully supports ASS subtitles, so some
+care needs to be taken when creating or viewing videos using them:
+
+### Playing back softsubs
+
+The best video player for playing back softsubs is [mpv](https://mpv.io).
+On Windows, another option is [MPC-HC](https://github.com/clsid2/mpc-hc/releases).
+
+Additional players that support ASS subtitles are the various mpv wrappers (e.g.
+mpv.net, mpc-qt, IINA, Celluloid, and Haruna), VLC, or Kodi. However, mpv
+remains the most recommended player, and the other players may have worse
+rendering performance in some cases.
+
+Other players like the various built-in players for Windows, Mac, TVs,
+smartphones, or web browsers may sometimes have rudimentary support for
+displaying the text of subtitles but will not correctly apply all effects and
+formatting.
+
+Note that except for MPC-HC, all the mentioned players use libass for rendering
+subtitles. MPC-HC, on the other hand, uses its own internal variant of VSFilter
+by default (which behaves similar but not identically to the other VSFilter
+versions), but can be configured to use libass or an external VSFilter version
+instead.
+
+### Fonts
+
+When adding subtitles to a video file for distribution, care needs to be taken
+to also add all the font files used in the subtitle file. You can automatically
+collect all used font files using Aegisub's [Fonts
+Collector](Fonts_Collector.md), but you will need to make sure to then
+distribute them along with your subtitles.
+
+To check whether all fonts for a given subtitle file are present in a video
+file or directory, you can run mpv from the command line with the
+`--sub-font-provider=none` option, which will make it only load the fonts
+attached to the video file or contained in the same directory as the video
+file, and not load any of your globally installed fonts. Then, you can watch
+for incorrectly formatted lines and/or font selection error messages in the
+terminal output to see if the subtitles depend on any fonts that are not
+yet included with the file.
+
+### Adding softsubs to a video container
+
+The only file format that fully supports ASS softsubs is Matroska (MKV). Other
+formats may have basic support for unstyled text subtitles and/or bitmap
+subtitles, but only Matroska has full support for all of the ASS format's
+styling features.
+
+You can create an MKV file using the [MKVToolNix
+GUI](https://www.bunkus.org/videotools/mkvtoolnix/) by simply dragging in your
+source video as well as your subtitle file. Then, you can add all the required
+font files as attachments in the attachment tab. All font attachments should be
+given the MIME type `application/x-truetype-font`, even if they're actually OTF
+fonts. This will allow video players to recognize them as font attachments and
+provide them to the subtitle renderer during playback.
+
+### Distributing standalone softsubs
+
+This method can be used when you want to only distribute the subtitle file and
+not the video (e.g. for file size reasons). You simply send the raw subtitle
+files along with the video. The viewer then needs to load them in a player that
+supports external subtitles. When using this method, you either need to make
+sure you use fonts that everyone can be expected to have installed, or
+distribute a separate ZIP archive with the fonts. For obvious reasons, this
+method isn't recommended.
+
+### Distributing a subtitles container
+
+A compromise between the previous two methods is to create an MKV file that
+contains *only* the subtitles and the attached fonts, and no video file. Such
+files are usually given the extension `.mks` (for **M**atros**k**a
+**S**ubtitles, as opposed to **M**atros**k**a **V**ideo).
+
+This MKS file can then be distributed as a standalone file to be loaded
+alongside the video by the viewer. Unlike a raw subtitles file, this will then
+also load all the attached fonts automatically.
+
+The main downside of this method is that not all players support loading MKS
+files. For example, at the time of writing they work perfectly fine in mpv, but
+need to be explicitly loaded as subtitle files in VLC (that is, they cannot
+simply be dragged into the player like other subtitle files) and cannot be
+loaded at all in MPC-HC.
 
 ## Hardsubbing with Avisynth
 
@@ -191,32 +273,3 @@ VirtualDub plugins folder. The filter will then be available as "TextSub".
 cannot parse UTF-8 (the default Aegisub encoding) files properly. This will
 result in any non-ASCII characters being rendered as gibberish. NEVER USE THIS
 FILTER.
-
-## Softsubbing
-
-Softsubbing a video can be done in several ways. On Windows using a DirectShow
-player, such as Media Player Classic, ZoomPlayer or even Windows Media Player,
-you need VSFilter installed to view the subtitles. If you use MPlayer, you need
-libass and FontConfig compiled to correctly view all the formatting.
-
-### Variant 1: softsubs inside the video container
-
-Matroska Video (MKV) is currently the best container for this method (MP4, OGM
-and even AVI can technically contain softsubs, but none supports font
-attachments, and all of them has various other issues). Using a muxer that
-supports attachments (i.e. [mkvmerge
-GUI](https://www.bunkus.org/videotools/mkvtoolnix/)), you simply add your
-subtitle files to the Matroska file as separate tracks (just like you add audio
-and video tracks), and any fonts as attachments (make sure they have the MIME
-type application/x-truetype-font). The fonts will then be installed temporarily
-by Haali Media Splitter (on Windows) or MPlayer (on \*nix and MacOS X) during
-playback.
-
-### Variant 2: distributing script files
-
-This method works best when you want to encode the video in an AVI wrapper. You
-simply send the raw subtitle files along with the video. The viewer then needs
-to load them in a player that supports external subtitles. When using this
-method, you either need to make sure you use fonts that everyone can be
-expected to have installed, or distribute a separate ZIP archive with the
-fonts. For obvious reasons, this method isn't recommended.
