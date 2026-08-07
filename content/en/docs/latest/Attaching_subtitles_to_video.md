@@ -260,16 +260,3 @@ normal encoding procedure for it.
 
 Keep in mind that, due to a bug in VSFilter, the path to the subtitle files
 MUST be absolute.
-
-## Hardsubbing with VirtualDub
-
-If you're already familiar with VirtualDub filters, and don't intend to do any
-other video processing, you should note that it's possible to use VSFilter as a
-VirtualDub filter as well. Just rename the .dll to .vdf and copy it to the
-VirtualDub plugins folder. The filter will then be available as "TextSub".
-
-**Warning**: VirtualDub comes with a TextSub of its own, that is called
-"TextSub 2.23". This is a very old version that, amongst many other issues,
-cannot parse UTF-8 (the default Aegisub encoding) files properly. This will
-result in any non-ASCII characters being rendered as gibberish. NEVER USE THIS
-FILTER.
