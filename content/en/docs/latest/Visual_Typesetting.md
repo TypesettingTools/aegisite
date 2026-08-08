@@ -66,7 +66,7 @@ control that last had it.
 
 You can right click to bring a context menu with other options:
 
-![Visual_menu](/img/3.2/Visual_menu.png#center)
+![Visual_menu](/img/3.5/Visual_menu.png#center)
 
 Save PNG snapshot
 : Saves a PNG snapshot of the current frame to the path specified in
@@ -84,8 +84,18 @@ Save PNG snapshot (no subtitles)
 Copy image to clipboard (no subtitles)
 : Same as above, but copying to clipboard.
 
+Save PNG snapshot (only subtitles)
+: Same as the previous option, but saves only the subtitles with a transparent
+  background.
+
+Copy image to clipboard (only subtitles)
+: Same as above, but copying to clipboard.
+
 Copy coordinates to clipboard
 : Copies the current mouse coordinates to clipboard, e.g. "230,152"
+
+Reset Video Pan
+: Undoes any zooming and panning of the video, centering it in the video display again.
 
 ## Tool Descriptions
 
