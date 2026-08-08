@@ -222,7 +222,53 @@ need to be explicitly loaded as subtitle files in VLC (that is, they cannot
 simply be dragged into the player like other subtitle files) and cannot be
 loaded at all in MPC-HC.
 
-## Hardsubbing with Avisynth
+## Hardsubbing workflows
+
+The best way to create an encode with burned in subtitles is to use the mpv
+video player's encoding feature.
+
+To burn in subtitles that are already muxed into a video with all required
+fonts (and marked as default), run the following command in a terminal:
+```
+mpv --no-config yourinput.mkv -o youroutput.mkv --audio=no --ovc=libx264 --ovcopts=preset=slower,crf=20
+```
+where, of course, you should replace `yourinput.mkv` and `youroutput.mkv` with
+your actual input and output filenames. You can adjust the `ovcopts` to control
+the resulting video's file size and quality.
+
+If your subtitle file is not already muxed into the video, you can add
+`--sub-file=yoursubtitles.ass` to the command to select them. In this case you
+will need to make sure that all fonts used by your subtitles are installed or
+passed to mpv with `--sub-fonts-dir`. Refer to the [mpv
+documentation](https://mpv.io/manual/master/) for more information on these
+parameters.
+
+The resulting video will not contain any audio tracks, so you will need to mux
+the audio back into the hardsubbed video afterwards using a program like MKVToolNix.
+
+If you prefer using a GUI, you can use [Handbrake](https://handbrake.fr/)
+instead: Mux your subtitles and fonts into your video and load the resulting
+video into Handbrake, then select your subtitle track in the Subtitles tab and
+make sure "Burn In" is checked. Ideally, you should also make sure that the
+audio does not get needlessly reencoded in the process, either by marking it as
+passthrough in the audio tab or by doing another remux afterwards to mux in the
+untouched audio again.
+
+Finally, you can also use FFmpeg to hardsub. This works similarly to hardsubbing
+with mpv, just with the following command instead:
+```
+ffmpeg -i yourinput.mkv -map 0:v -map 0:a -c:a copy -c:v libx264 -preset slower -crf 20 -vf subtitles=yourinput.mkv youroutput.mkv
+```
+Once again, this assumes that your video file already contains the subtitles
+with all fonts muxed in.
+
+However, at the time of writing, hardsubbing using FFmpeg results in lower
+quality subtitle blending than the other two options, so mpv remains the best
+recommendation.
+
+### Hardsubbing with Avisynth
+
+{{<todo>}}Add a section about hardsubbing with VapourSynth{{</todo>}}
 
 Many people use the Avisynth package to add filters to their video to clean up
 defects, or otherwise manipulate the video image before encoding it. It is a
