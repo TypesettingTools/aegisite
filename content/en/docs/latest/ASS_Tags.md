@@ -201,6 +201,9 @@ regular effect. Note that at high values the effect de-generates into
 nothingness, and generally isn't very useful. For strong blurs, `\blur` is
 generally more useful as a result. The _strength_ must be an integer number.
 
+Use of `\be` in new subtitles is discouraged since it does not scale correctly
+with the frame size. `\blur` should be used instead.
+
 {{<tag-def-box title="Blur edges (Gaussian kernel)" id="\blur">}}\\blur<i>\<strength></i>{{</tag-def-box>}}
 In general, this has the same function as the [`\be`]({{< relref "ASS_Tags#\be" >}}) tag, but
 uses a more advanced algorithm that looks better at high strengths. Unlike
