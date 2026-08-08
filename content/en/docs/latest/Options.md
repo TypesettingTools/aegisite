@@ -36,8 +36,9 @@ Save UI state in subtitles files
   reduce the noise in the changes.
 
 Toolbar icon size
-: The size of icons to use in all of the toolbars in Aegisub. Currently the
-  only valid values are 16 and 24.
+: The size of icons to use in all of the toolbars in Aegisub. Not all icon sizes are possible, the
+  sizes only go up in discrete steps. Without any additional DPI scaling, the valid sizes are currently
+  16, 24, 32, 48, and 64.
 
 Automatically load linked files
 : Whenever you save a script, Aegisub also stores some information about what
