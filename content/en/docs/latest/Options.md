@@ -19,9 +19,9 @@ program, you can just delete config.json and restart Aegisub.
 
 ## General
 
-![preferences-general](/img/3.2/preferences-general.png#center)
+![preferences-general](/img/3.5/preferences-general.png#center)
 
-Auto Check for Updates
+Check for updates on startup
 : If enabled, Aegisub will periodically check whether there is a newer version
   available, and alert you if there is.
   Requires a working connection to the internet, naturally.
@@ -60,11 +60,11 @@ Recently Used Lists
 
 ### Default Styles
 
-![preferences-default-styles](/img/3.2/preferences-default-styles.png#center)
+![preferences-default-styles](/img/3.5/preferences-default-styles.png#center)
 
 ## Audio
 
-![preferences-audio](/img/3.2/preferences-audio.png#center)
+![preferences-audio](/img/3.5/preferences-audio.png#center)
 
 Lock scroll on cursor
 :  When enabled, the audio waveform view will automatically scroll to follow the
@@ -170,7 +170,7 @@ Font Size
 
 ## Video
 
-![preferences-video](/img/3.2/preferences-video.png#center)
+![preferences-video](/img/3.5/preferences-video.png#center)
 
 Show keyframes in slider
 :  When enabled, Aegisub will draw keyframe markers on the video seek slider.
@@ -187,6 +187,21 @@ Always show visual tools
 Automatically open audio when opening video
 : When enabled, when you open a video file which also has audio data, Aegisub
   will automatically load the audio.
+
+Scrolling on the video display
+: Determines what happens when scrolling the mouse wheel while on top of the
+  video display. By default, this changes the size of the video display on the
+  screen, but it can be configured to zoom or pan the video instead, or to do
+  nothing at all. The latter two options can be especially useful when working
+  on a touchpad.
+
+Ctrl+Scrolling on the video display
+: Same as above, but determines what happens when scrolling while holding the
+  ctrl key.
+
+Shift+Scrolling on the video display
+: Same as above, but determines what happens when scrolling while holding the
+  shift key.
 
 Default zoom
 : The default video zoom level. Useful if you have a very big or very small screen.
@@ -218,9 +233,36 @@ Match video resolution on open
   match. If set to "always", Aegisub will always resample the script to
   match the video resolution automatically.
 
+### Layout resolution
+
+Set layout resolution from video on open
+: Controls what Aegisub will do when opening a video on a subtitle file that
+  does not yet have a layout resolution set.
+
+Prompt on layout resolution mismatch
+: Controls whether to show a prompt when opening a video whose resolution or
+  aspect ratio differs from the subtitle file's layout resolution.
+
+### YCbCr Matrix
+
+Warn on untagged video color matrix
+: Whether to show a warning when loading a video that does not contain color
+  space metadata specifying a color matrix and range.
+
+Warn on HDR/WCG video
+: Whether to show a warning when loading a video that has HDR and/or WCG colors.
+
+Use video's YCbCr Matrix when script has no matrix set
+: Controls what Aegisub will do when opening a video on a subtitle file that
+  does not yet have a YCbCr Matrix set.
+
+Match video's YCbCr Matrix on open
+: Controls what Aegisub will do when opening a video whose color matrix differs
+  from the subtitle file's YCbCr Matrix header.
+
 ## Interface
 
-![preferences-interface](/img/3.2/preferences-interface.png#center)
+![preferences-interface](/img/3.5/preferences-interface.png#center)
 
 Enable call tips
 : When enabled, Aegisub will detect when you are writing an [override tag]({{< relref "ASS_Tags" >}}) and display a small box with a brief reference of the syntax of
@@ -234,6 +276,10 @@ Overwrite in time boxes
   numbers that are already there, you have to overwrite them. Unticking this box
   disables this behavior and makes the time edit boxes behave just like normal
   text edit boxes (almost).
+
+Shift+Enter adds `\n`
+: If checked, pressing Shift+Enter in the subtitle edit box will insert a soft
+  line break (`\n`). Otherwise, it will insert a hard line break (`\N`).
 
 Enable syntax highlighting
 : Enables or disables syntax highlighting of override tags in the main edit
@@ -291,12 +337,17 @@ Font
 
 ### Colors
 
-![preferences-colours](/img/3.2/preferences-colours.png#center)
+![preferences-colours](/img/3.5/preferences-colours.png#center)
 
 #### Audio Display
 
 Play cursor
 : The color of the playback cursor.
+
+Current frame range
+Previous frame range
+: The color of the shaded area indicating the current and previous frame.
+  Both the color and the transparency can be configured.
 
 Line boundary start
 Line boundary end
@@ -306,7 +357,10 @@ Line boundary inactive line
 Syllable boundary
 : The color of a syllable boundary line in karaoke mode.
 
-### Color Schemes
+Seconds boundaries
+: The color of the lines drawn on every whole second.
+
+### Audio Color Schemes
 
 Controls the color scheme used for the waveform/spectrum and some of the UI
 elements. Aegisub currently does not have a UI for editing the color schemes or
@@ -315,8 +369,24 @@ config.json.
 
 #### Syntax Highlighting
 
+Background
+: The background color of the subtitle edit box.
+
 Normal
 : The color of normal text.
+
+Comments
+: The color of text in override blocks that is not part of any override tag
+
+Drawing Commands
+: The color of commands (`m`, `l`, `b`, etc.) in drawings
+
+Drawing X Coords
+Drawing Y Coords
+: The color of X or Y coordinate values in drawings
+
+Underline Spline Endpoints
+: Whether to underline the coordinates of the endpoints of Bézier splines in drawings
 
 Brackets
 : The color of brackets that start/end override blocks.
@@ -340,7 +410,10 @@ Line break
 : Color for \\N, \\n and \\h outside of override blocks.
 
 Karaoke templates
-: Color for karaoke templater blocks on template lines.
+: Color for karaoke templater Lua blocks on template lines.
+
+Karaoke variables
+: Color for karaoke templater variables on template lines.
 
 #### Subtitle Grid
 
@@ -353,16 +426,16 @@ Selection foreground
 Selection background
 : The color of selected lines in the grid.
 
-Comment background
-Selected comment background
-: The background color of commented-out lines and selected commented-out lines,
-respectively.
-
 Collision foreground
 : The text color of lines whose timings overlap with the currently active line.
 
 Line in frame background
 : The background color of lines currently visible in the video frame.
+
+Comment background
+Selected comment background
+: The background color of commented-out lines and selected commented-out lines,
+respectively.
 
 Header
 Left column
@@ -370,9 +443,34 @@ Active line border
 Lines
 : The color of the grid lines and fixed columns/headers.
 
+CPS Error
+: The color in which high CPS (characters per second) values should be highlighted.
+
+#### Visual Typesetting Tools
+
+Controls the colors used for the on-screen indicators and draggable markers
+of the [visual typesetting tools]({{< relref "Visual_Typesetting" >}}).
+
+Primary Lines
+: Line color of the currently selected marker.
+
+Secondary Lines
+: Line color of unselected markers.
+
+Primary Highlight
+: Fill color of the currently selected marker.
+
+Secondary Highlight
+: Fill color of unselected markers.
+
+#### Visual Typesetting Tools Alpha
+
+Shaded Area
+: Transparency level of the shaded area for the visual clip tools.
+
 ## Hotkeys
 
-![preferences-hotkeys](/img/3.2/preferences-hotkeys.png#center)
+![preferences-hotkeys](/img/3.5/preferences-hotkeys.png#center)
 
 This page lists all hotkeys currently set in Aegisub, and allows you to add,
 remove or change them.
@@ -404,7 +502,7 @@ as when editing them.
 
 ## Backup
 
-![preferences-backup](/img/3.2/preferences-backup.png#center)
+![preferences-backup](/img/3.5/preferences-backup.png#center)
 
 ### Automatic Save
 
@@ -437,7 +535,7 @@ Path
 
 ## Automation
 
-![preferences-automation](/img/3.2/preferences-automation.png#center)
+![preferences-automation](/img/3.5/preferences-automation.png#center)
 
 Base path
 : A base directory where you put non-autoloaded automation scripts. Used only
@@ -465,21 +563,12 @@ Autoreload on Export
 
 ## Advanced Audio
 
-![preferences-advanced-audio](/img/3.2/preferences-advanced-audio.png#center)
+![preferences-advanced-audio](/img/3.5/preferences-advanced-audio.png#center)
 
 Audio provider
-: What backend to to use for loading audio. Currently there are only two
-  methods.
-
-  _avisynth_ (Windows only)
-  : Uses [Avisynth](https://avisynth.nl/index.php/Main_Page) to load audio. All file types
-    will be loaded with DirectShowSource(), except for AVS files which will
-    be opened with Import().
-
-  _FFmpegSource_
-  : Uses [FFMS2](https://github.com/FFMS/ffms2) to load audio.
-    Generally more reliable than opening via DirectShowSource, but slower
-    due to that it has to index files first.
+: What backend to to use for loading audio. This option exists because
+  more than one provider used to be available in the past, but currently,
+  only the FFmpegSource provider is available.
 
   Regardless of this setting, the internal PCM WAV reader will always be
   tried first for WAV files.
@@ -504,9 +593,7 @@ Audio player
 
   _pulse_ (Linux and other \*NIX-like systems)
   : Plays sound back through a [PulseAudio](https://pulseaudio.org/)
-    sound server. This is the least-tested and least likely to work of the
-    audio players, and is only recommended if your audio setup makes
-    non-pulse players undesirable.
+    sound server.
 
   _portaudio_
   : Use the [PortAudio](https://www.portaudio.com/) API to play back
@@ -556,6 +643,14 @@ Spectrum quality
   calculated in 32 bit floating point) of the audio.
 
 {{<todo>}}this is probably wrong {{</todo>}}
+
+Frequency mapping
+: Controls the vertical positioning of the different frequencies in the
+  spectrum display. The two possible extremes here are Linear and Logarithmic,
+  and the other values (Extended, Medium, and Compressed) interpolate between
+  the two. Choosing a nonlinear frequency mapping will make lower frequencies
+  more visible, which can make it easier to make out certain sounds. They may,
+  however, need a higher spectrum quality setting to look good.
 
 Cache memory max
 : The maximum amount of memory to use for audio spectrum caching. The results
@@ -609,26 +704,13 @@ Portaudio device
 
 ## Advanced Video
 
-![preferences-advanced-video](/img/3.2/preferences-advanced-video.png#center)
+![preferences-advanced-video](/img/3.5/preferences-advanced-video.png#center)
 
 Video provider
-: Decides what method Aegisub should use to load video. What options you have
-  available here depends on how your copy of Aegisub was compiled and what
-  operating system you are running under. The following alternatives exist:
+: Decides what method Aegisub should use to load video. This option exists
+  because more than one provider used to be available in the past, but
+  currently, only the FFmpegSource provider is available.
 
-  _avisynth_ (Windows only)
-  : Uses [Avisynth](https://avisynth.nl/index.php/Main_Page) to load video. Versatile,
-    supports loading almost all common formats as well as .d2v files
-    (indexed DVD VOBs) if the correct plugin is supplied. Note that Aegisub
-    can install its own avisynth.dll instead of using your system
-    installation if so desired. Requires Video for Windows decoders for AVI
-    files for best performance. Uses DirectShow for most formats, so it
-    isn't recommended for anything but AVI, d2v and opening Avisynth
-    scripts.
-
-  _FFmpegSource_
-  : Uses [FFMS2](https://github.com/FFMS/ffms2) to load video.
-    Generally the most reliable option.
 
 Subtitles provider
 : Decides what backend Aegisub uses to render subtitles on the video.
@@ -648,42 +730,6 @@ Subtitles provider
     that will be [softsubbed]({{< relref "Attaching_subtitles_to_video#softsubbing" >}}) it
     is a good idea to check your work with both VSFilter and libass, as an
     increasing number of users are using libass.
-
-Force BT.601
-: Pretend all YUV videos are BT.601, for VSFilter compatibility.
-
-  When VSFilter is used as a DirectShow filter, it always uses the BT.601
-  color matrix for converting the subtitles from RGB to YUV. This means that
-  if the video uses BT.709 (as most HD video and the occasional DVD does),
-  colors which match the video in Aegisub will not match the video in the
-  player. This option makes Aegisub always convert videos to RGB using
-  BT.601, making the colors shown in Aegisub incorrect, but making it so that
-  if the colors match in Aegisub, they will match in the player.
-
-  To make things more exciting, VSFilter will use the *correct* color space
-  when used as the internal subtitle renderer in MPC-HC, so enabling this
-  option will result in *mismatched* colors in that case. As the ISR is
-  currently broken in many ways (e.g. it is impossible to accurately position
-  subtitles with it), we recommend not worrying about it for now.
-
-  This comparison may make this clearer:
-
-  ![bt601](/img/3.2/bt601.png)
-
-  Aegisub now writes what colorspace should be used for RGB -> YUV
-  conversions to the subtitle file, so hopefully this mess will be resolved
-  by renderer improvements sometime in the future.
-
-### Avisynth
-
-Allow pre-2.56a Avisynth
-: Support using ancient versions of Avisynth that a few people refuse to
-  upgrade past for various bad reasons.
-
-Avisynth memory limit
-: Frame cache memory limit for Avisynth. Raising this generally does not
-  improve performance and should be done only if you're opening overcomplicated
-  Avisynth scripts directly.
 
 ### FFmpegSource
 
