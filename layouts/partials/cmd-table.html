@@ -10,7 +10,7 @@
     {{ $pageLang := .Page.Lang}}
     {{ range hugo.Data.commands_32 }}
       <!-- TODO: check "eq $pageLang .locale" for all lang -->
-      {{ if in (slice         
+      {{ if in (slice
         (and (eq $pageLang "en") (eq .locale "en_US"))
         (and (eq $pageLang "zh-cn") (eq .locale "zh_CN"))
         (and (eq $pageLang "tr-tr") (eq .locale "tr_TR"))
