@@ -1,0 +1,1238 @@
+ - locale: es
+   name: Spanish
+   commands:
+    - name: am/manager
+      display: 'Automatización'
+      help: 'Abre el administrador de Automatización'
+
+    - name: am/meta
+      display: 'Automatización'
+      help: 'Abre el administrador de Automatización. Ctrl: Reescanear dir. de carga automática. Ctrl+Mayús: Reescanear dir. de carga automática y recargar todos los scripts de automatización'
+
+    - name: am/reload
+      display: 'Recargar scripts de Automatización'
+      help: 'Recarga todos los scripts de Automatización y volver a escanear el directorio de carga automática'
+
+    - name: am/reload/autoload
+      display: 'Recarga scripts de carga automática de Automatización'
+      help: 'Reescanear la carpeta de carga automática de Automatización'
+
+    - name: app/about
+      display: 'Acerca de'
+      help: 'Acerca de Aegisub'
+
+    - name: app/display/audio_subs
+      display: 'Vista de audio y subtítulos'
+      help: 'Muestra solamente el audio y la rejilla de subtítulos'
+
+    - name: app/display/full
+      display: 'Vista completa'
+      help: 'Muestra audio, video y la rejilla de subtítulos'
+
+    - name: app/display/subs
+      display: 'Vista de solo subtítulos'
+      help: 'Muestra solamente la rejilla de subtítulos'
+
+    - name: app/display/video_subs
+      display: 'Vista de video y subtítulos'
+      help: 'Muestra solamente el video y la rejilla de subtítulos'
+
+    - name: app/exit
+      display: 'Salir'
+      help: 'Cierra la aplicación'
+
+    - name: app/language
+      display: 'Idioma'
+      help: 'Selecciona el idioma de la interfaz de Aegisub'
+
+    - name: app/log
+      display: 'Ventana del registro de eventos'
+      help: 'Muestra el registro de eventos'
+
+    - name: app/new_window
+      display: 'Nueva ventana'
+      help: 'Abre una nueva ventana de la aplicación'
+
+    - name: app/options
+      display: 'Opciones'
+      help: 'Cambia la configuración de Aegisub'
+
+    - name: app/toggle/global_hotkeys
+      display: 'Alterna las sustituciones de atajos de teclado globales'
+      help: 'Alterna las sustituciones de atajos de teclado globales (modo Medusa)'
+
+    - name: app/toggle/toolbar
+      display: 'Ocultar barra de herramientas'
+      help: 'Alterna la barra de herramientas principal'
+
+    - name: app/updates
+      display: 'Buscar actualizaciones'
+      help: 'Comprueba si hay alguna nueva versión de Aegisub disponible'
+
+    - name: audio/close
+      display: 'Cerrar audio'
+      help: 'Cierra el archivo de audio actualmente abierto'
+
+    - name: audio/commit
+      display: 'Confirmar'
+      help: 'Confirma cualquier cambio de sincronización de audio pendiente'
+
+    - name: audio/commit/default
+      display: 'Confirma y usa sincronización predeterminada para la siguiente línea'
+      help: 'Confirma cualquier cambio de sincronización de audio pendiente y reinicia los tiempos de la siguiente línea al valor predeterminado'
+
+    - name: audio/commit/next
+      display: 'Confirma y avanza a la siguiente línea'
+      help: 'Confirma cualquier cambio de sincronización de audio pendiente y avanza a la siguiente línea'
+
+    - name: audio/commit/stay
+      display: 'Confirma y permanece en la línea actual'
+      help: 'Confirma cualquier cambio de sincronización de audio pendiente y permanece en la línea actual'
+
+    - name: audio/go_to
+      display: 'Ir a selección'
+      help: 'Desplaza el visor de audio para centrarlo en la selección de audio actual'
+
+    - name: audio/go_to/end
+      display: 'Ir al final de la selección'
+      help: 'Desplaza el visor de audio para centrarlo en el final de la selección de audio actual'
+
+    - name: audio/go_to/start
+      display: 'Ir al inicio de la selección'
+      help: 'Desplaza el visor de audio para centrarlo en el inicio de la selección de audio actual'
+
+    - name: audio/karaoke
+      display: 'Alternar modo karaoke'
+      help: 'Alternar modo karaoke'
+
+    - name: audio/open
+      display: 'Abrir archivo de audio'
+      help: 'Abre un archivo de audio'
+
+    - name: audio/open/blank
+      display: 'Abrir audio en blanco de 2 h 30 min'
+      help: 'Abre un segmento de audio en silencio de 150 minutos (para depuración)'
+
+    - name: audio/open/noise
+      display: 'Abrir audio con ruido de 2 h 30 min'
+      help: 'Abre un segmento de audio con ruido de 150 minutos (para depuración)'
+
+    - name: audio/open/video
+      display: 'Abrir audio desde el video'
+      help: 'Abre el audio desde el archivo de video actual'
+
+    - name: audio/opt/autocommit
+      display: 'Confirma todos los cambios automáticamente'
+      help: 'Confirma todos los cambios automáticamente'
+
+    - name: audio/opt/autonext
+      display: 'Ir automáticamente a la línea siguiente al confirmar'
+      help: 'Pasa automáticamente a la línea siguiente al confirmar'
+
+    - name: audio/opt/autoscroll
+      display: 'Desplaza el visor de audio automáticamente a la línea seleccionada'
+      help: 'Desplaza el visor de audio automáticamente a la línea seleccionada'
+
+    - name: audio/opt/spectrum
+      display: 'Modo de analizador de espectro'
+      help: 'Modo de analizador de espectro'
+
+    - name: audio/opt/vertical_link
+      display: 'Vincular deslizadores de zoom vertical y volumen'
+      help: 'Vincular deslizadores de zoom vertical y volumen'
+
+    - name: audio/play/current
+      display: 'Reproducir selección de audio actual'
+      help: 'Reproducir la selección de audio actual, ignorando los cambios realizados durante la reproducción'
+
+    - name: audio/play/line
+      display: 'Reproducir línea actual'
+      help: 'Reproduce el audio para la línea actual'
+
+    - name: audio/play/selection
+      display: 'Reproducir selección de audio'
+      help: 'Reproduce el audio hasta alcanzar el final de la selección'
+
+    - name: audio/play/selection/after
+      display: 'Reproduce 500 ms después de la selección'
+      help: 'Reproduce 500 ms después de la selección'
+
+    - name: audio/play/selection/before
+      display: 'Reproduce 500 ms antes de la selección'
+      help: 'Reproduce 500 ms antes de la selección'
+
+    - name: audio/play/selection/begin
+      display: 'Reproduce los primeros 500 ms de la selección'
+      help: 'Reproduce los primeros 500 ms de la selección'
+
+    - name: audio/play/selection/end
+      display: 'Reproduce los últimos 500 ms de la selección'
+      help: 'Reproduce los últimos 500 ms de la selección'
+
+    - name: audio/play/to_end
+      display: 'Reproduce desde el inicio de la selección hasta el final del archivo'
+      help: 'Reproduce desde el inicio de la selección hasta el final del archivo'
+
+    - name: audio/play/toggle
+      display: 'Reproducir selección de audio o detener'
+      help: 'Reproduce la selección, o detiene la reproducción si ya está en curso'
+
+    - name: audio/save/clip
+      display: 'Crear clip de audio'
+      help: 'Guarda un segmento de audio a partir de la línea seleccionada'
+
+    - name: audio/scroll/left
+      display: 'Desplazar a la izquierda'
+      help: 'Desplaza el visor de audio hacia la izquierda'
+
+    - name: audio/scroll/right
+      display: 'Desplazar a la derecha'
+      help: 'Desplaza el visor de audio hacia la derecha'
+
+    - name: audio/stop
+      display: 'Detener reproducción'
+      help: 'Detener la reproducción de audio y video'
+
+    - name: audio/view/spectrum
+      display: 'Vista de espectro'
+      help: 'Muestra el audio como un espectrograma de frecuencia-energía'
+
+    - name: audio/view/waveform
+      display: 'Vista de forma de onda'
+      help: 'Muestra el audio como un gráfico de amplitud lineal'
+
+    - name: edit/clear
+      display: 'Limpiar'
+      help: 'Quita el texto de la línea actual'
+
+    - name: edit/clear/text
+      display: 'Quitar texto'
+      help: 'Limpia el texto de la línea actual, dejando las etiquetas de control'
+
+    - name: edit/color/outline
+      display: 'Color de contorno'
+      help: 'Establece el color del contorno (\3c) en la posición del cursor'
+
+    - name: edit/color/primary
+      display: 'Color primario'
+      help: 'Establece el color de relleno primario (\c) en la posición del cursor'
+
+    - name: edit/color/secondary
+      display: 'Color secundario'
+      help: 'Establece el color de relleno secundario (karaoke) (\2c) en la posición del cursor'
+
+    - name: edit/color/shadow
+      display: 'Color de sombra'
+      help: 'Establece el color de la sombra (\4c) en la posición del cursor)'
+
+    - name: edit/find_replace
+      display: 'Buscar y reemplazar'
+      help: 'Busca y reemplaza palabras en subtítulos'
+
+    - name: edit/font
+      display: 'Fuente'
+      help: 'Seleccionar fuente y tamaño'
+
+    - name: edit/insert_original
+      display: 'Insertar original'
+      help: 'Inserta el texto de la línea original en el cursor'
+
+    - name: edit/line/copy
+      display: 'Copiar líneas'
+      help: 'Copia los subtítulos al portapapeles'
+
+    - name: edit/line/cut
+      display: 'Cortar líneas'
+      help: 'Corta los subtítulos al portapapeles'
+
+    - name: edit/line/delete
+      display: 'Eliminar líneas'
+      help: 'Elimina las líneas seleccionadas actualmente'
+
+    - name: edit/line/duplicate
+      display: 'Duplicar líneas'
+      help: 'Duplica las líneas seleccionadas'
+
+    - name: edit/line/join/as_karaoke
+      display: 'Como karaoke'
+      help: 'Une las líneas seleccionadas en una sola, como karaoke'
+
+    - name: edit/line/join/concatenate
+      display: 'Concatenar'
+      help: 'Une las líneas seleccionadas en una sola, concatenando el texto'
+
+    - name: edit/line/join/keep_first
+      display: 'Mantener la primera'
+      help: 'Une las líneas en una sola, manteniendo el texto de la primera y descartando el resto'
+
+    - name: edit/line/paste
+      display: 'Pegar líneas'
+      help: 'Pega subtítulos desde el portapapeles'
+
+    - name: edit/line/paste/over
+      display: 'Pegar líneas sobre'
+      help: 'Pega subtítulos sobre otros'
+
+    - name: edit/line/recombine
+      display: 'Recombinar líneas'
+      help: 'Recombina los subtítulos que hayan sido divididos y combinados'
+
+    - name: edit/line/split/after
+      display: 'Dividir líneas después del fotograma actual'
+      help: 'Divide la línea actual en una línea que termine en el fotograma actual y otra que comience en el siguiente fotograma'
+
+    - name: edit/line/split/before
+      display: 'Dividir líneas antes del fotograma actual'
+      help: 'Divide la línea actual en una línea que termine en el fotograma anterior y otra que comience en el fotograma actual'
+
+    - name: edit/line/split/by_karaoke
+      display: 'Dividir líneas (por karaoke)'
+      help: 'Usa la sincronización de karaoke para dividir la línea en varias más pequeñas'
+
+    - name: edit/line/split/estimate
+      display: 'Dividir en el cursor (estimar tiempos)'
+      help: 'Divide la línea actual en el cursor, repartiendo la duración original de la línea entre las nuevas'
+
+    - name: edit/line/split/preserve
+      display: 'Dividir en el cursor (mantener tiempos)'
+      help: 'Divide la línea actual en el cursor, fijando ambas líneas a los tiempos de la línea original'
+
+    - name: edit/line/split/video
+      display: 'Dividir en el cursor (en el fotograma de video)'
+      help: 'Divide la línea actual en el cursor, dividiendo su duración en el fotograma del video actual'
+
+    - name: edit/redo
+      display: 'Nada que rehacer'
+      help: 'Rehace la última acción deshecha'
+
+    - name: edit/revert
+      display: 'Revertir'
+      help: 'Revierte la línea activa a su estado inicial (mostrado en el editor superior)'
+
+    - name: edit/style/bold
+      display: 'Alternar negrita'
+      help: 'Alterna el formato de negrita (\b) para la selección actual o en la posición actual del cursor'
+
+    - name: edit/style/italic
+      display: 'Alternar cursiva'
+      help: 'Alterna el formato de cursiva (\i) para la selección actual o en la posición actual del cursor'
+
+    - name: edit/style/strikeout
+      display: 'Alternar tachado'
+      help: 'Alterna el formato de tachado (\s) para la selección actual o en la posición actual del cursor'
+
+    - name: edit/style/underline
+      display: 'Alternar subrayado'
+      help: 'Alterna el formato de subrayado (\u) para la selección actual o en la posición actual del cursor'
+
+    - name: edit/undo
+      display: 'Nada que deshacer'
+      help: 'Deshacer la última acción'
+
+    - name: grid/line/next
+      display: 'Siguiente línea'
+      help: 'Avanzar a la siguiente línea de subtítulos'
+
+    - name: grid/line/next/create
+      display: 'Siguiente línea'
+      help: 'Avanza a la siguiente línea de subtítulos, creando una nueva si es necesario'
+
+    - name: grid/line/prev
+      display: 'Línea anterior'
+      help: 'Mover a la línea anterior'
+
+    - name: grid/move/down
+      display: 'Bajar línea'
+      help: 'Mueve las líneas seleccionadas una fila hacia abajo'
+
+    - name: grid/move/up
+      display: 'Subir línea'
+      help: 'Mueve las líneas seleccionadas una fila hacia arriba'
+
+    - name: grid/sort/actor
+      display: 'Nombre del actor'
+      help: 'Ordena todos los subtítulos por sus nombres de actor'
+
+    - name: grid/sort/actor/selected
+      display: 'Nombre del actor'
+      help: 'Ordena los subtítulos seleccionados por sus nombres de actor'
+
+    - name: grid/sort/effect
+      display: 'Efecto'
+      help: 'Ordena todos los subtítulos por sus efectos'
+
+    - name: grid/sort/effect/selected
+      display: 'Efecto'
+      help: 'Ordena los subtítulos seleccionados por sus efectos'
+
+    - name: grid/sort/end
+      display: 'Tiempo final'
+      help: 'Ordena todos los subtítulos por su tiempo final'
+
+    - name: grid/sort/end/selected
+      display: 'Tiempo final'
+      help: 'Ordena los subtítulos seleccionados por su tiempo final'
+
+    - name: grid/sort/layer
+      display: 'Capa'
+      help: 'Ordena todos los subtítulos por su número de capa'
+
+    - name: grid/sort/layer/selected
+      display: 'Capa'
+      help: 'Ordena los subtítulos seleccionados por su número de capa'
+
+    - name: grid/sort/start
+      display: 'Tiempo inicial'
+      help: 'Ordena todos los subtítulos por su tiempo inicial'
+
+    - name: grid/sort/start/selected
+      display: 'Tiempo inicial'
+      help: 'Ordena los subtítulos seleccionados por su tiempo inicial'
+
+    - name: grid/sort/style
+      display: 'Nombre de estilo'
+      help: 'Ordena todos los subtítulos por sus nombres de estilo'
+
+    - name: grid/sort/style/selected
+      display: 'Nombre de estilo'
+      help: 'Ordena los subtítulos seleccionados por sus nombres de estilo'
+
+    - name: grid/swap
+      display: 'Intercambiar líneas'
+      help: 'Intercambia las dos líneas seleccionadas'
+
+    - name: grid/tag/cycle_hiding
+      display: 'Alternar modo para ocultar etiquetas'
+      help: 'Recorre los modos para ocultar etiquetas'
+
+    - name: grid/tags/hide
+      display: 'Ocultar etiquetas'
+      help: 'Oculta las etiquetas de control en la rejilla de subtítulos'
+
+    - name: grid/tags/show
+      display: 'Mostrar etiquetas'
+      help: 'Muestra las etiquetas de control completas en la rejilla de subtítulos'
+
+    - name: grid/tags/simplify
+      display: 'Simplificar etiquetas'
+      help: 'Reemplaza las etiquetas de control en la rejilla de subtítulos con un marcador simplificado'
+
+    - name: help/bugs
+      display: 'Seguimiento de errores'
+      help: 'Visita el sistema de seguimiento de errores de Aegisub para reportar fallos y solicitar nuevas funciones'
+
+    - name: help/contents
+      display: 'Contenidos'
+      help: 'Temas de ayuda'
+
+    - name: help/irc
+      display: 'Canal IRC'
+      help: 'Visitar el canal IRC oficial de Aegisub'
+
+    - name: help/video
+      display: 'Composición tipográfica visual'
+      help: 'Abre la página del manual para Composición Tipográfica Visual'
+
+    - name: help/website
+      display: 'Sitio web'
+      help: 'Visita el sitio oficial de Aegisub'
+
+    - name: keyframe/close
+      display: 'Cerrar fotogramas clave'
+      help: 'Descarta los fotogramas clave cargados actualmente y usa los del video, si los hay'
+
+    - name: keyframe/open
+      display: 'Abrir fotogramas clave'
+      help: 'Abre un archivo de lista de fotogramas clave'
+
+    - name: keyframe/save
+      display: 'Guardar fotogramas clave'
+      help: 'Guarda la lista actual de fotogramas clave en un archivo'
+
+    - name: recent/audio
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/0
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/1
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/10
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/11
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/12
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/13
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/14
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/15
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/2
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/3
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/4
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/5
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/6
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/7
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/8
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/audio/9
+      display: 'Reciente'
+      help: 'Abrir audio reciente'
+
+    - name: recent/keyframe
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/0
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/1
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/10
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/11
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/12
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/13
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/14
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/15
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/2
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/3
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/4
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/5
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/6
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/7
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/8
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/keyframes/9
+      display: 'Reciente'
+      help: 'Abrir fotogramas clave recientes'
+
+    - name: recent/subtitle
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/0
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/1
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/10
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/11
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/12
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/13
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/14
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/15
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/2
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/3
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/4
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/5
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/6
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/7
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/8
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/subtitle/9
+      display: 'Reciente'
+      help: 'Abrir subtítulos recientes'
+
+    - name: recent/timecodes
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/0
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/1
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/10
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/11
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/12
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/13
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/14
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/15
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/2
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/3
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/4
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/5
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/6
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/7
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/8
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/timecodes/9
+      display: 'Reciente'
+      help: 'Abrir códigos de tiempo recientes'
+
+    - name: recent/video
+      display: 'Reciente'
+      help: 'Abrir video reciente'
+
+    - name: recent/video/0
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/1
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/10
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/11
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/12
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/13
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/14
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/15
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/2
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/3
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/4
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/5
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/6
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/7
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/8
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: recent/video/9
+      display: 'Reciente'
+      help: 'Abrir videos recientes'
+
+    - name: subtitle/attachment
+      display: 'Adjuntos'
+      help: 'Abre la ventana del administrador de adjuntos'
+
+    - name: subtitle/close
+      display: 'Cerrar'
+      help: 'Cerrar'
+
+    - name: subtitle/find
+      display: 'Buscar'
+      help: 'Busca texto en los subtítulos'
+
+    - name: subtitle/find/next
+      display: 'Buscar siguiente'
+      help: 'Encuentra el siguiente resultado de la última búsqueda'
+
+    - name: subtitle/insert/after
+      display: 'Después de la actual'
+      help: 'Inserta una línea después de la actual'
+
+    - name: subtitle/insert/after/videotime
+      display: 'Después de la actual, en la posición del video'
+      help: 'Inserta una línea después de la actual, comenzando en la posición del video'
+
+    - name: subtitle/insert/before
+      display: 'Antes de la actual'
+      help: 'Inserta una línea antes de la actual'
+
+    - name: subtitle/insert/before/videotime
+      display: 'Antes de la actual, en la posición del video'
+      help: 'Inserta una línea antes de la actual, comenzando en la posición del video'
+
+    - name: subtitle/new
+      display: 'Nuevos subtítulos'
+      help: 'Crea subtítulos nuevos'
+
+    - name: subtitle/open
+      display: 'Abrir subtítulos'
+      help: 'Abre un archivo de subtítulos'
+
+    - name: subtitle/open/autosave
+      display: 'Abre subtítulos guardados automáticamente'
+      help: 'Abre una versión anterior de un archivo guardado automáticamente por Aegisub'
+
+    - name: subtitle/open/charset
+      display: 'Abrir subtítulos con conjunto de caracteres'
+      help: 'Abre un archivo de subtítulos con un conjunto de caracteres especifico'
+
+    - name: subtitle/open/video
+      display: 'Abrir subtítulos desde el video'
+      help: 'Abre los subtítulos desde el archivo de video actual'
+
+    - name: subtitle/properties
+      display: 'Propiedades'
+      help: 'Abre la ventana de propiedades del guion'
+
+    - name: subtitle/save
+      display: 'Guardar subtítulos'
+      help: 'Guarda los subtítulos actuales'
+
+    - name: subtitle/save/as
+      display: 'Guardar subtítulos como'
+      help: 'Guarda los subtítulos con otro nombre'
+
+    - name: subtitle/select/all
+      display: 'Seleccionar todo'
+      help: 'Selecciona todas las líneas de diálogo'
+
+    - name: subtitle/select/visible
+      display: 'Seleccionar visibles'
+      help: 'Seleccionar todas las líneas de diálogo visibles en el fotograma de video actual'
+
+    - name: subtitle/spellcheck
+      display: 'Revisar ortografía'
+      help: 'Abre el corrector ortográfico'
+
+    - name: time/continuous/end
+      display: 'Cambiar fin'
+      help: 'Cambia el tiempo final de las líneas al tiempo inicial de la línea siguiente'
+
+    - name: time/continuous/start
+      display: 'Cambiar inicio'
+      help: 'Cambia el tiempo inicial de las líneas al tiempo final de la línea anterior'
+
+    - name: time/frame/current
+      display: 'Desplazar al fotograma actual'
+      help: 'Desplaza la selección para que la línea activa comience en el fotograma actual'
+
+    - name: time/lead/both
+      display: 'Añadir tiempo de entrada y salida'
+      help: 'Añade los tiempos de entrada y salida a las líneas seleccionadas'
+
+    - name: time/lead/in
+      display: 'Añadir tiempo de entrada'
+      help: 'Añade el tiempo de entrada a las líneas seleccionadas'
+
+    - name: time/lead/out
+      display: 'Añadir tiempo de salida'
+      help: 'Añade el tiempo de salida a las líneas seleccionadas'
+
+    - name: time/length/decrease
+      display: 'Reducir longitud'
+      help: 'Reduce la longitud de la unidad actual de sincronización'
+
+    - name: time/length/decrease/shift
+      display: 'Reducir longitud y desplazar'
+      help: 'Reduce la longitud de la unidad actual de sincronización y desplaza los siguientes elementos'
+
+    - name: time/length/increase
+      display: 'Aumentar longitud'
+      help: 'Aumenta la longitud de la unidad actual de sincronización'
+
+    - name: time/length/increase/shift
+      display: 'Aumentar longitud y desplazar'
+      help: 'Aumenta la longitud de la unidad actual de sincronización y desplaza los siguientes elementos'
+
+    - name: time/next
+      display: 'Siguiente línea'
+      help: 'Línea o sílaba siguiente'
+
+    - name: time/prev
+      display: 'Línea anterior'
+      help: 'Línea o sílaba anterior'
+
+    - name: time/shift
+      display: 'Desplazar por tiempo'
+      help: 'Desplaza subtítulos por tiempo o fotogramas'
+
+    - name: time/snap/end_video
+      display: 'Ajustar fin al video'
+      help: 'Establece el fin de los subtítulos seleccionados en el fotograma actual del video'
+
+    - name: time/snap/scene
+      display: 'Ajustar a escena'
+      help: 'Establece el inicio y el fin de los subtítulos en los fotogramas clave alrededor del fotograma actual del video'
+
+    - name: time/snap/start_video
+      display: 'Ajustar inicio al video'
+      help: 'Establece el inicio de los subtítulos seleccionados en el fotograma actual del video'
+
+    - name: time/start/decrease
+      display: 'Desplazar tiempo inicial hacia atrás'
+      help: 'Desplaza hacia atrás el tiempo inicial de la unidad de sincronización actual'
+
+    - name: time/start/increase
+      display: 'Desplazar tiempo inicial hacia adelante'
+      help: 'Desplaza hacia adelante el tiempo inicial de la unidad de sincronización actual'
+
+    - name: timecode/close
+      display: 'Cerrar archivo de códigos de tiempo'
+      help: 'Cierra el archivo de códigos de tiempo abierto actualmente'
+
+    - name: timecode/open
+      display: 'Abrir archivo de códigos de tiempo'
+      help: 'Abre un archivo de códigos de tiempo VFR v1 o v2'
+
+    - name: timecode/save
+      display: 'Guardar archivo de códigos de tiempo'
+      help: 'Guarda un archivo de códigos de tiempo VFR v2'
+
+    - name: tool/export
+      display: 'Exportar subtítulos'
+      help: 'Guarda una copia de los subtítulos en otro formato o con procesamientos aplicados'
+
+    - name: tool/font_collector
+      display: 'Recolector de fuentes'
+      help: 'Abre el recolector de fuentes'
+
+    - name: tool/line/select
+      display: 'Seleccionar líneas'
+      help: 'Selecciona líneas basado en un criterio definido'
+
+    - name: tool/resampleres
+      display: 'Remuestrear resolución'
+      help: 'Remuestrea los subtítulos para mantener su apariencia al cambiar la resolución del guion'
+
+    - name: tool/style/assistant
+      display: 'Asistente de estilizado'
+      help: 'Abre el asistente de estilizado'
+
+    - name: tool/style/manager
+      display: 'Administrador de estilos'
+      help: 'Abre el administrador de estilos'
+
+    - name: tool/styling_assistant/commit
+      display: 'Aceptar cambios'
+      help: 'Confirma los cambios y avanza a la siguiente línea'
+
+    - name: tool/styling_assistant/preview
+      display: 'Previsualizar cambios'
+      help: 'Confirma los cambios y permanece en la línea actual'
+
+    - name: tool/time/kanji
+      display: 'Sincronizador de kanji'
+      help: 'Abre el copiador de tiempos de kanji'
+
+    - name: tool/time/postprocess
+      display: 'Posprocesador de sincronización'
+      help: 'Aplica un posprocesamiento a los tiempos de los subtítulos para añadir entradas y salidas, ajustar los tiempos a los cambios de escena, etc.'
+
+    - name: tool/translation_assistant
+      display: 'Asistente de traducción'
+      help: 'Abre el asistente de traducción'
+
+    - name: tool/translation_assistant/commit
+      display: 'Aceptar cambios'
+      help: 'Confirma los cambios y avanza a la siguiente línea'
+
+    - name: tool/translation_assistant/insert_original
+      display: 'Insertar original'
+      help: 'Inserta el texto sin traducir'
+
+    - name: tool/translation_assistant/next
+      display: 'Siguiente línea'
+      help: 'Avanza a la siguiente línea descartando los cambios'
+
+    - name: tool/translation_assistant/prev
+      display: 'Línea anterior'
+      help: 'Retrocede a la línea anterior descartando los cambios'
+
+    - name: tool/translation_assistant/preview
+      display: 'Previsualizar cambios'
+      help: 'Confirma los cambios y permanece en la línea actual'
+
+    - name: video/aspect/cinematic
+      display: 'Cinemático (2.35:1)'
+      help: 'Fuerza el video a la relación de aspecto 2.35:1'
+
+    - name: video/aspect/custom
+      display: 'Personalizado'
+      help: 'Fuerza el video a la relación de aspecto personalizada'
+
+    - name: video/aspect/default
+      display: 'Predeterminado'
+      help: 'Usa la relación de aspecto original del video'
+
+    - name: video/aspect/full
+      display: 'Pantalla completa (4:3)'
+      help: 'Fuerza el video a la relación de aspecto 4:3'
+
+    - name: video/aspect/wide
+      display: 'Pantalla panorámica (16:9)'
+      help: 'Fuerza el video a la relación de aspecto 16:9'
+
+    - name: video/close
+      display: 'Cerrar video'
+      help: 'Cierra el archivo de video abierto actualmente'
+
+    - name: video/copy_coordinates
+      display: 'Copiar coordenadas al portapapeles'
+      help: 'Copia las coordenadas actuales del ratón sobre el video al portapapeles'
+
+    - name: video/detach
+      display: 'Despegar video'
+      help: 'Desacopla el visor de video de la ventana principal y lo muestra en una ventana independiente'
+
+    - name: video/details
+      display: 'Mostrar detalles del video'
+      help: 'Muestra los detalles del video'
+
+    - name: video/focus_seek
+      display: 'Alternar enfoque del deslizador de video'
+      help: 'Alterna el enfoque entre el deslizador de video y el control anterior que haya tenido el enfoque'
+
+    - name: video/frame/copy
+      display: 'Copiar imagen al portapapeles'
+      help: 'Copia el fotograma mostrado actualmente al portapapeles'
+
+    - name: video/frame/copy/raw
+      display: 'Copiar imagen al portapapeles (sin subtítulos)'
+      help: 'Copia el fotograma actualmente mostrado al portapapeles, sin los subtítulos'
+
+    - name: video/frame/copy/subs
+      display: 'Copiar imagen al portapapeles (solo subtítulos)'
+      help: 'Copiar los subtítulos mostrados actualmente al portapapeles, con fondo transparente'
+
+    - name: video/frame/next
+      display: 'Siguiente fotograma'
+      help: 'Desplazarse al siguiente fotograma'
+
+    - name: video/frame/next/boundary
+      display: 'Siguiente límite'
+      help: 'Desplazarse al siguiente inicio o fin de un subtítulo'
+
+    - name: video/frame/next/keyframe
+      display: 'Siguiente fotograma clave'
+      help: 'Desplazarse al siguiente fotograma clave'
+
+    - name: video/frame/next/large
+      display: 'Salto rápido hacia adelante'
+      help: 'Salto rápido hacia adelante'
+
+    - name: video/frame/prev
+      display: 'Fotograma anterior'
+      help: 'Desplazarse al fotograma anterior'
+
+    - name: video/frame/prev/boundary
+      display: 'Límite anterior'
+      help: 'Desplazarse al anterior inicio o fin de un subtítulo'
+
+    - name: video/frame/prev/keyframe
+      display: 'Fotograma clave anterior'
+      help: 'Desplazarse al fotograma clave anterior'
+
+    - name: video/frame/prev/large
+      display: 'Salto rápido hacia atrás'
+      help: 'Salto rápido hacia atrás'
+
+    - name: video/frame/save
+      display: 'Guardar captura de pantalla PNG'
+      help: 'Guarda el fotograma mostrado actualmente en un archivo PNG dentro del directorio del video'
+
+    - name: video/frame/save/raw
+      display: 'Guardar captura de pantalla PNG (sin subtítulos)'
+      help: 'Guarda el fotograma mostrado actualmente sin los subtítulos en un archivo PNG dentro del directorio del video'
+
+    - name: video/frame/save/subs
+      display: 'Guardar captura PNG (solo subtítulos)'
+      help: 'Guardar los subtítulos mostrados actualmente con fondo transparente en un archivo PNG en el directorio del video'
+
+    - name: video/jump
+      display: 'Ir a'
+      help: 'Ir a fotograma o tiempo'
+
+    - name: video/jump/end
+      display: 'Ir al final del video'
+      help: 'Desplaza el video hacia el último fotograma del subtítulo actual'
+
+    - name: video/jump/start
+      display: 'Ir al comienzo del video'
+      help: 'Desplaza el video hacia el primer fotograma del subtítulo actual'
+
+    - name: video/open
+      display: 'Abrir video'
+      help: 'Abre un archivo de video'
+
+    - name: video/open/dummy
+      display: 'Usar video de prueba'
+      help: 'Abre un video de prueba con color sólido'
+
+    - name: video/opt/autoscroll
+      display: 'Alternar autodesplazamiento del video'
+      help: 'Alterna el desplazamiento automático del video al tiempo de inicio de las líneas seleccionadas'
+
+    - name: video/play
+      display: 'Reproducir'
+      help: 'Reproducir el video desde esta posición'
+
+    - name: video/play/line
+      display: 'Reproducir línea'
+      help: 'Reproducir el video para la línea actual'
+
+    - name: video/reset_pan
+      display: 'Restablecer el desplazamiento del video'
+      help: 'Restablece la posición del video en el visor'
+
+    - name: video/show_overscan
+      display: 'Mostrar máscara de sobreexploración'
+      help: 'Muestra una máscara sobre el video, indicando las áreas que podrían quedar recortadas por la sobreexploración en televisores'
+
+    - name: video/stop
+      display: 'Detener video'
+      help: 'Detener reproducción de video'
+
+    - name: video/subtitles_provider/cycle
+      display: 'Alternar proveedor de subtítulos activo'
+      help: 'Alterna entre los proveedores de subtítulos disponibles'
+
+    - name: video/tool/clip
+      display: 'Recortar'
+      help: 'Aplica un recorte rectangular a los subtítulos'
+
+    - name: video/tool/cross
+      display: 'Estándar'
+      help: 'Modo estándar: doble clic establece posición'
+
+    - name: video/tool/drag
+      display: 'Arrastrar'
+      help: 'Arrastra los subtítulos'
+
+    - name: video/tool/rotate/xy
+      display: 'Rotar XY'
+      help: 'Rota los subtítulos en sus ejes X/Y'
+
+    - name: video/tool/rotate/z
+      display: 'Rotar Z'
+      help: 'Rota los subtítulos en su eje Z'
+
+    - name: video/tool/scale
+      display: 'Escalar'
+      help: 'Escala los subtítulos en los ejes X/Y'
+
+    - name: video/tool/vclip/bicubic
+      display: 'Bicúbica'
+      help: 'Añade una curva bicúbica Bézier'
+
+    - name: video/tool/vclip/convert
+      display: 'Convertir'
+      help: 'Convierte un segmento entre línea y bicúbica'
+
+    - name: video/tool/vclip/drag
+      display: 'Arrastrar'
+      help: 'Arrastra puntos de control'
+
+    - name: video/tool/vclip/freehand
+      display: 'Mano alzada'
+      help: 'Dibuja una forma a mano alzada'
+
+    - name: video/tool/vclip/freehand_smooth
+      display: 'Mano alzada suavizada'
+      help: 'Dibuja una forma a mano alzada suavizada'
+
+    - name: video/tool/vclip/insert
+      display: 'Insertar'
+      help: 'Inserta un punto de control'
+
+    - name: video/tool/vclip/line
+      display: 'Línea'
+      help: 'Añade una línea'
+
+    - name: video/tool/vclip/remove
+      display: 'Eliminar'
+      help: 'Elimina un punto de control'
+
+    - name: video/tool/vector_clip
+      display: 'Recorte vectorial'
+      help: 'Aplica un recorte vectorial a los subtítulos'
+
+    - name: video/zoom/100
+      display: '100 %'
+      help: 'Fija el zoom al 100 %'
+
+    - name: video/zoom/200
+      display: '200 %'
+      help: 'Fija el zoom al 200 %'
+
+    - name: video/zoom/50
+      display: '50 %'
+      help: 'Fija el zoom al 50 %'
+
+    - name: video/zoom/in
+      display: 'Acercar'
+      help: 'Acerca el video'
+
+    - name: video/zoom/out
+      display: 'Alejar'
+      help: 'Aleja el video'

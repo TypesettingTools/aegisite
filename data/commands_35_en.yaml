@@ -1,0 +1,1238 @@
+ - locale: en_US
+   name: English (United States)
+   commands:
+    - name: am/manager
+      display: 'Automation'
+      help: 'Open automation manager'
+
+    - name: am/meta
+      display: 'Automation'
+      help: 'Open automation manager. Ctrl: Rescan autoload folder. Ctrl+Shift: Rescan autoload folder and reload all automation scripts'
+
+    - name: am/reload
+      display: 'Reload Automation scripts'
+      help: 'Reload all Automation scripts and rescan the autoload folder'
+
+    - name: am/reload/autoload
+      display: 'Reload autoload Automation scripts'
+      help: 'Rescan the Automation autoload folder'
+
+    - name: app/about
+      display: 'About'
+      help: 'About Aegisub'
+
+    - name: app/display/audio_subs
+      display: 'Audio+Subs View'
+      help: 'Display audio and the subtitles grid only'
+
+    - name: app/display/full
+      display: 'Full view'
+      help: 'Display audio, video and then subtitles grid'
+
+    - name: app/display/subs
+      display: 'Subs Only View'
+      help: 'Display the subtitles grid only'
+
+    - name: app/display/video_subs
+      display: 'Video+Subs View'
+      help: 'Display video and the subtitles grid only'
+
+    - name: app/exit
+      display: 'Exit'
+      help: 'Exit the application'
+
+    - name: app/language
+      display: 'Language'
+      help: 'Select Aegisub interface language'
+
+    - name: app/log
+      display: 'Log window'
+      help: 'View the event log'
+
+    - name: app/new_window
+      display: 'New Window'
+      help: 'Open a new application window'
+
+    - name: app/options
+      display: 'Options'
+      help: 'Configure Aegisub'
+
+    - name: app/toggle/global_hotkeys
+      display: 'Toggle global hotkey overrides'
+      help: 'Toggle global hotkey overrides (Medusa Mode)'
+
+    - name: app/toggle/toolbar
+      display: 'Hide Toolbar'
+      help: 'Toggle the main toolbar'
+
+    - name: app/updates
+      display: 'Check for Updates'
+      help: 'Check to see if there is a new version of Aegisub available'
+
+    - name: audio/close
+      display: 'Close Audio'
+      help: 'Close the currently open audio file'
+
+    - name: audio/commit
+      display: 'Commit'
+      help: 'Commit any pending audio timing changes'
+
+    - name: audio/commit/default
+      display: 'Commit and use default timing for next line'
+      help: 'Commit any pending audio timing changes and reset the next line''s times to the default'
+
+    - name: audio/commit/next
+      display: 'Commit and move to next line'
+      help: 'Commit any pending audio timing changes and move to the next line'
+
+    - name: audio/commit/stay
+      display: 'Commit and stay on current line'
+      help: 'Commit any pending audio timing changes and stay on the current line'
+
+    - name: audio/go_to
+      display: 'Go to selection'
+      help: 'Scroll the audio display to center on the current audio selection'
+
+    - name: audio/go_to/end
+      display: 'Go to selection end'
+      help: 'Scroll the audio display to center on the end of current audio selection'
+
+    - name: audio/go_to/start
+      display: 'Go to selection start'
+      help: 'Scroll the audio display to center on the start of current audio selection'
+
+    - name: audio/karaoke
+      display: 'Toggle karaoke mode'
+      help: 'Toggle karaoke mode'
+
+    - name: audio/open
+      display: 'Open Audio File'
+      help: 'Open an audio file'
+
+    - name: audio/open/blank
+      display: 'Open 2h30 Blank Audio'
+      help: 'Open a 150 minutes blank audio clip, for debugging'
+
+    - name: audio/open/noise
+      display: 'Open 2h30 Noise Audio'
+      help: 'Open a 150 minutes noise-filled audio clip, for debugging'
+
+    - name: audio/open/video
+      display: 'Open Audio from Video'
+      help: 'Open the audio from the current video file'
+
+    - name: audio/opt/autocommit
+      display: 'Automatically commit all changes'
+      help: 'Automatically commit all changes'
+
+    - name: audio/opt/autonext
+      display: 'Auto go to next line on commit'
+      help: 'Automatically go to next line on commit'
+
+    - name: audio/opt/autoscroll
+      display: 'Auto scroll audio display to selected line'
+      help: 'Auto scroll audio display to selected line'
+
+    - name: audio/opt/spectrum
+      display: 'Spectrum analyzer mode'
+      help: 'Spectrum analyzer mode'
+
+    - name: audio/opt/vertical_link
+      display: 'Link vertical zoom and volume sliders'
+      help: 'Link vertical zoom and volume sliders'
+
+    - name: audio/play/current
+      display: 'Play current audio selection'
+      help: 'Play the current audio selection, ignoring changes made while playing'
+
+    - name: audio/play/line
+      display: 'Play current line'
+      help: 'Play the audio for the current line'
+
+    - name: audio/play/selection
+      display: 'Play audio selection'
+      help: 'Play audio until the end of the selection is reached'
+
+    - name: audio/play/selection/after
+      display: 'Play 500 ms after selection'
+      help: 'Play 500 ms after selection'
+
+    - name: audio/play/selection/before
+      display: 'Play 500 ms before selection'
+      help: 'Play 500 ms before selection'
+
+    - name: audio/play/selection/begin
+      display: 'Play first 500 ms of selection'
+      help: 'Play first 500 ms of selection'
+
+    - name: audio/play/selection/end
+      display: 'Play last 500 ms of selection'
+      help: 'Play last 500 ms of selection'
+
+    - name: audio/play/to_end
+      display: 'Play from selection start to end of file'
+      help: 'Play from selection start to end of file'
+
+    - name: audio/play/toggle
+      display: 'Play audio selection or stop'
+      help: 'Play selection, or stop playback if it''s already playing'
+
+    - name: audio/save/clip
+      display: 'Create audio clip'
+      help: 'Save an audio clip of the selected line'
+
+    - name: audio/scroll/left
+      display: 'Scroll left'
+      help: 'Scroll the audio display left'
+
+    - name: audio/scroll/right
+      display: 'Scroll right'
+      help: 'Scroll the audio display right'
+
+    - name: audio/stop
+      display: 'Stop playing'
+      help: 'Stop audio and video playback'
+
+    - name: audio/view/spectrum
+      display: 'Spectrum Display'
+      help: 'Display audio as a frequency-power spectrograph'
+
+    - name: audio/view/waveform
+      display: 'Waveform Display'
+      help: 'Display audio as a linear amplitude graph'
+
+    - name: edit/clear
+      display: 'Clear'
+      help: 'Clear the current line''s text'
+
+    - name: edit/clear/text
+      display: 'Clear Text'
+      help: 'Clear the current line''s text, leaving override tags'
+
+    - name: edit/color/outline
+      display: 'Outline Color'
+      help: 'Set the outline color (\3c) at the cursor position'
+
+    - name: edit/color/primary
+      display: 'Primary Color'
+      help: 'Set the primary fill color (\c) at the cursor position'
+
+    - name: edit/color/secondary
+      display: 'Secondary Color'
+      help: 'Set the secondary (karaoke) fill color (\2c) at the cursor position'
+
+    - name: edit/color/shadow
+      display: 'Shadow Color'
+      help: 'Set the shadow color (\4c) at the cursor position'
+
+    - name: edit/find_replace
+      display: 'Find and Replace'
+      help: 'Find and replace words in subtitles'
+
+    - name: edit/font
+      display: 'Font Face'
+      help: 'Select a font face and size'
+
+    - name: edit/insert_original
+      display: 'Insert Original'
+      help: 'Insert the original line text at the cursor'
+
+    - name: edit/line/copy
+      display: 'Copy Lines'
+      help: 'Copy subtitles to the clipboard'
+
+    - name: edit/line/cut
+      display: 'Cut Lines'
+      help: 'Cut subtitles'
+
+    - name: edit/line/delete
+      display: 'Delete Lines'
+      help: 'Delete currently selected lines'
+
+    - name: edit/line/duplicate
+      display: 'Duplicate Lines'
+      help: 'Duplicate the selected lines'
+
+    - name: edit/line/join/as_karaoke
+      display: 'As Karaoke'
+      help: 'Join selected lines in a single one, as karaoke'
+
+    - name: edit/line/join/concatenate
+      display: 'Concatenate'
+      help: 'Join selected lines in a single one, concatenating text together'
+
+    - name: edit/line/join/keep_first
+      display: 'Keep First'
+      help: 'Join selected lines in a single one, keeping text of first and discarding remaining'
+
+    - name: edit/line/paste
+      display: 'Paste Lines'
+      help: 'Paste subtitles'
+
+    - name: edit/line/paste/over
+      display: 'Paste Lines Over'
+      help: 'Paste subtitles over others'
+
+    - name: edit/line/recombine
+      display: 'Recombine Lines'
+      help: 'Recombine subtitles which have been split and merged'
+
+    - name: edit/line/split/after
+      display: 'Split lines after current frame'
+      help: 'Split the current line into a line which ends on the current frame and a line which starts on the next frame'
+
+    - name: edit/line/split/before
+      display: 'Split lines before current frame'
+      help: 'Split the current line into a line which ends on the previous frame and a line which starts on the current frame'
+
+    - name: edit/line/split/by_karaoke
+      display: 'Split Lines (by karaoke)'
+      help: 'Use karaoke timing to split line into multiple smaller lines'
+
+    - name: edit/line/split/estimate
+      display: 'Split at cursor (estimate times)'
+      help: 'Split the current line at the cursor, dividing the original line''s duration between the new ones'
+
+    - name: edit/line/split/preserve
+      display: 'Split at cursor (preserve times)'
+      help: 'Split the current line at the cursor, setting both lines to the original line''s times'
+
+    - name: edit/line/split/video
+      display: 'Split at cursor (at video frame)'
+      help: 'Split the current line at the cursor, dividing the line''s duration at the current video frame'
+
+    - name: edit/redo
+      display: 'Nothing to redo'
+      help: 'Redo last undone action'
+
+    - name: edit/revert
+      display: 'Revert'
+      help: 'Revert the active line to its initial state (shown in the upper editor)'
+
+    - name: edit/style/bold
+      display: 'Toggle Bold'
+      help: 'Toggle bold (\b) for the current selection or at the current cursor position'
+
+    - name: edit/style/italic
+      display: 'Toggle Italics'
+      help: 'Toggle italics (\i) for the current selection or at the current cursor position'
+
+    - name: edit/style/strikeout
+      display: 'Toggle Strikeout'
+      help: 'Toggle strikeout (\s) for the current selection or at the current cursor position'
+
+    - name: edit/style/underline
+      display: 'Toggle Underline'
+      help: 'Toggle underline (\u) for the current selection or at the current cursor position'
+
+    - name: edit/undo
+      display: 'Nothing to undo'
+      help: 'Undo last action'
+
+    - name: grid/line/next
+      display: 'Next Line'
+      help: 'Move to the next subtitle line'
+
+    - name: grid/line/next/create
+      display: 'Next Line'
+      help: 'Move to the next subtitle line, creating a new one if needed'
+
+    - name: grid/line/prev
+      display: 'Previous Line'
+      help: 'Move to the previous line'
+
+    - name: grid/move/down
+      display: 'Move line down'
+      help: 'Move the selected lines down one row'
+
+    - name: grid/move/up
+      display: 'Move line up'
+      help: 'Move the selected lines up one row'
+
+    - name: grid/sort/actor
+      display: 'Actor Name'
+      help: 'Sort all subtitles by their actor names'
+
+    - name: grid/sort/actor/selected
+      display: 'Actor Name'
+      help: 'Sort selected subtitles by their actor names'
+
+    - name: grid/sort/effect
+      display: 'Effect'
+      help: 'Sort all subtitles by their effects'
+
+    - name: grid/sort/effect/selected
+      display: 'Effect'
+      help: 'Sort selected subtitles by their effects'
+
+    - name: grid/sort/end
+      display: 'End Time'
+      help: 'Sort all subtitles by their end times'
+
+    - name: grid/sort/end/selected
+      display: 'End Time'
+      help: 'Sort selected subtitles by their end times'
+
+    - name: grid/sort/layer
+      display: 'Layer'
+      help: 'Sort all subtitles by their layer number'
+
+    - name: grid/sort/layer/selected
+      display: 'Layer'
+      help: 'Sort selected subtitles by their layer number'
+
+    - name: grid/sort/start
+      display: 'Start Time'
+      help: 'Sort all subtitles by their start times'
+
+    - name: grid/sort/start/selected
+      display: 'Start Time'
+      help: 'Sort selected subtitles by their start times'
+
+    - name: grid/sort/style
+      display: 'Style Name'
+      help: 'Sort all subtitles by their style names'
+
+    - name: grid/sort/style/selected
+      display: 'Style Name'
+      help: 'Sort selected subtitles by their style names'
+
+    - name: grid/swap
+      display: 'Swap Lines'
+      help: 'Swap the two selected lines'
+
+    - name: grid/tag/cycle_hiding
+      display: 'Cycle Tag Hiding Mode'
+      help: 'Cycle through tag hiding modes'
+
+    - name: grid/tags/hide
+      display: 'Hide Tags'
+      help: 'Hide override tags in the subtitle grid'
+
+    - name: grid/tags/show
+      display: 'Show Tags'
+      help: 'Show full override tags in the subtitle grid'
+
+    - name: grid/tags/simplify
+      display: 'Simplify Tags'
+      help: 'Replace override tags in the subtitle grid with a simplified placeholder'
+
+    - name: help/bugs
+      display: 'Bug Tracker'
+      help: 'Visit Aegisub''s bug tracker to report bugs and request new features'
+
+    - name: help/contents
+      display: 'Contents'
+      help: 'Help topics'
+
+    - name: help/irc
+      display: 'IRC Channel'
+      help: 'Visit Aegisub''s official IRC channel'
+
+    - name: help/video
+      display: 'Visual Typesetting'
+      help: 'Open the manual page for Visual Typesetting'
+
+    - name: help/website
+      display: 'Website'
+      help: 'Visit Aegisub''s official website'
+
+    - name: keyframe/close
+      display: 'Close Keyframes'
+      help: 'Discard the currently loaded keyframes and use those from the video, if any'
+
+    - name: keyframe/open
+      display: 'Open Keyframes'
+      help: 'Open a keyframe list file'
+
+    - name: keyframe/save
+      display: 'Save Keyframes'
+      help: 'Save the current list of keyframes to a file'
+
+    - name: recent/audio
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/0
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/1
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/10
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/11
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/12
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/13
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/14
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/15
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/2
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/3
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/4
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/5
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/6
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/7
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/8
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/audio/9
+      display: 'Recent'
+      help: 'Open recent audio'
+
+    - name: recent/keyframe
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/0
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/1
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/10
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/11
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/12
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/13
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/14
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/15
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/2
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/3
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/4
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/5
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/6
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/7
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/8
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/keyframes/9
+      display: 'Recent'
+      help: 'Open recent keyframes'
+
+    - name: recent/subtitle
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/0
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/1
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/10
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/11
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/12
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/13
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/14
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/15
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/2
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/3
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/4
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/5
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/6
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/7
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/8
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/subtitle/9
+      display: 'Recent'
+      help: 'Open recent subtitles'
+
+    - name: recent/timecodes
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/0
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/1
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/10
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/11
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/12
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/13
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/14
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/15
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/2
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/3
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/4
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/5
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/6
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/7
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/8
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/timecodes/9
+      display: 'Recent'
+      help: 'Open recent timecodes'
+
+    - name: recent/video
+      display: 'Recent'
+      help: 'Open recent video'
+
+    - name: recent/video/0
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/1
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/10
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/11
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/12
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/13
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/14
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/15
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/2
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/3
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/4
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/5
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/6
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/7
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/8
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: recent/video/9
+      display: 'Recent'
+      help: 'Open recent videos'
+
+    - name: subtitle/attachment
+      display: 'Attachments'
+      help: 'Open the attachment manager dialog'
+
+    - name: subtitle/close
+      display: 'Close'
+      help: 'Close'
+
+    - name: subtitle/find
+      display: 'Find'
+      help: 'Search for text in the subtitles'
+
+    - name: subtitle/find/next
+      display: 'Find Next'
+      help: 'Find next match of last search'
+
+    - name: subtitle/insert/after
+      display: 'After Current'
+      help: 'Insert a new line after the current one'
+
+    - name: subtitle/insert/after/videotime
+      display: 'After Current, at Video Time'
+      help: 'Insert a new line after the current one, starting at video time'
+
+    - name: subtitle/insert/before
+      display: 'Before Current'
+      help: 'Insert a new line before the current one'
+
+    - name: subtitle/insert/before/videotime
+      display: 'Before Current, at Video Time'
+      help: 'Insert a new line before the current one, starting at video time'
+
+    - name: subtitle/new
+      display: 'New Subtitles'
+      help: 'New subtitles'
+
+    - name: subtitle/open
+      display: 'Open Subtitles'
+      help: 'Open a subtitles file'
+
+    - name: subtitle/open/autosave
+      display: 'Open Autosaved Subtitles'
+      help: 'Open a previous version of a file which was autosaved by Aegisub'
+
+    - name: subtitle/open/charset
+      display: 'Open Subtitles with Charset'
+      help: 'Open a subtitles file with a specific file encoding'
+
+    - name: subtitle/open/video
+      display: 'Open Subtitles from Video'
+      help: 'Open the subtitles from the current video file'
+
+    - name: subtitle/properties
+      display: 'Properties'
+      help: 'Open script properties window'
+
+    - name: subtitle/save
+      display: 'Save Subtitles'
+      help: 'Save the current subtitles'
+
+    - name: subtitle/save/as
+      display: 'Save Subtitles as'
+      help: 'Save subtitles with another name'
+
+    - name: subtitle/select/all
+      display: 'Select All'
+      help: 'Select all dialogue lines'
+
+    - name: subtitle/select/visible
+      display: 'Select Visible'
+      help: 'Select all dialogue lines that are visible on the current video frame'
+
+    - name: subtitle/spellcheck
+      display: 'Spell Checker'
+      help: 'Open spell checker'
+
+    - name: time/continuous/end
+      display: 'Change End'
+      help: 'Change end times of lines to the next line''s start time'
+
+    - name: time/continuous/start
+      display: 'Change Start'
+      help: 'Change start times of lines to the previous line''s end time'
+
+    - name: time/frame/current
+      display: 'Shift to Current Frame'
+      help: 'Shift selection so that the active line starts at current frame'
+
+    - name: time/lead/both
+      display: 'Add lead in and out'
+      help: 'Add both lead in and out to the selected lines'
+
+    - name: time/lead/in
+      display: 'Add lead in'
+      help: 'Add the lead in time to the selected lines'
+
+    - name: time/lead/out
+      display: 'Add lead out'
+      help: 'Add the lead out time to the selected lines'
+
+    - name: time/length/decrease
+      display: 'Decrease length'
+      help: 'Decrease the length of the current timing unit'
+
+    - name: time/length/decrease/shift
+      display: 'Decrease length and shift'
+      help: 'Decrease the length of the current timing unit and shift the following items'
+
+    - name: time/length/increase
+      display: 'Increase length'
+      help: 'Increase the length of the current timing unit'
+
+    - name: time/length/increase/shift
+      display: 'Increase length and shift'
+      help: 'Increase the length of the current timing unit and shift the following items'
+
+    - name: time/next
+      display: 'Next Line'
+      help: 'Next line or syllable'
+
+    - name: time/prev
+      display: 'Previous Line'
+      help: 'Previous line or syllable'
+
+    - name: time/shift
+      display: 'Shift Times'
+      help: 'Shift subtitles by time or frames'
+
+    - name: time/snap/end_video
+      display: 'Snap End to Video'
+      help: 'Set end of selected subtitles to current video frame'
+
+    - name: time/snap/scene
+      display: 'Snap to Scene'
+      help: 'Set start and end of subtitles to the keyframes around current video frame'
+
+    - name: time/snap/start_video
+      display: 'Snap Start to Video'
+      help: 'Set start of selected subtitles to current video frame'
+
+    - name: time/start/decrease
+      display: 'Shift start time backward'
+      help: 'Shift the start time of the current timing unit backward'
+
+    - name: time/start/increase
+      display: 'Shift start time forward'
+      help: 'Shift the start time of the current timing unit forward'
+
+    - name: timecode/close
+      display: 'Close Timecodes File'
+      help: 'Close the currently open timecodes file'
+
+    - name: timecode/open
+      display: 'Open Timecodes File'
+      help: 'Open a VFR timecodes v1 or v2 file'
+
+    - name: timecode/save
+      display: 'Save Timecodes File'
+      help: 'Save a VFR timecodes v2 file'
+
+    - name: tool/export
+      display: 'Export Subtitles'
+      help: 'Save a copy of subtitles in a different format or with processing applied to it'
+
+    - name: tool/font_collector
+      display: 'Fonts Collector'
+      help: 'Open fonts collector'
+
+    - name: tool/line/select
+      display: 'Select Lines'
+      help: 'Select lines based on defined criteria'
+
+    - name: tool/resampleres
+      display: 'Resample Resolution'
+      help: 'Resample subtitles to maintain their current appearance at a different script resolution'
+
+    - name: tool/style/assistant
+      display: 'Styling Assistant'
+      help: 'Open styling assistant'
+
+    - name: tool/style/manager
+      display: 'Styles Manager'
+      help: 'Open the styles manager'
+
+    - name: tool/styling_assistant/commit
+      display: 'Accept changes'
+      help: 'Commit changes and move to the next line'
+
+    - name: tool/styling_assistant/preview
+      display: 'Preview changes'
+      help: 'Commit changes and stay on the current line'
+
+    - name: tool/time/kanji
+      display: 'Kanji Timer'
+      help: 'Open the Kanji timer copier'
+
+    - name: tool/time/postprocess
+      display: 'Timing Post-Processor'
+      help: 'Post-process the subtitle timing to add lead-ins and lead-outs, snap timing to scene changes, etc.'
+
+    - name: tool/translation_assistant
+      display: 'Translation Assistant'
+      help: 'Open translation assistant'
+
+    - name: tool/translation_assistant/commit
+      display: 'Accept changes'
+      help: 'Commit changes and move to the next line'
+
+    - name: tool/translation_assistant/insert_original
+      display: 'Insert Original'
+      help: 'Insert the untranslated text'
+
+    - name: tool/translation_assistant/next
+      display: 'Next Line'
+      help: 'Move to the next line without committing changes'
+
+    - name: tool/translation_assistant/prev
+      display: 'Previous Line'
+      help: 'Move to the previous line without committing changes'
+
+    - name: tool/translation_assistant/preview
+      display: 'Preview changes'
+      help: 'Commit changes and stay on the current line'
+
+    - name: video/aspect/cinematic
+      display: 'Cinematic (2.35)'
+      help: 'Force video to 2.35 aspect ratio'
+
+    - name: video/aspect/custom
+      display: 'Custom'
+      help: 'Force video to a custom aspect ratio'
+
+    - name: video/aspect/default
+      display: 'Default'
+      help: 'Use video''s original aspect ratio'
+
+    - name: video/aspect/full
+      display: 'Fullscreen (4:3)'
+      help: 'Force video to 4:3 aspect ratio'
+
+    - name: video/aspect/wide
+      display: 'Widescreen (16:9)'
+      help: 'Force video to 16:9 aspect ratio'
+
+    - name: video/close
+      display: 'Close Video'
+      help: 'Close the currently open video file'
+
+    - name: video/copy_coordinates
+      display: 'Copy coordinates to Clipboard'
+      help: 'Copy the current coordinates of the mouse over the video to the clipboard'
+
+    - name: video/detach
+      display: 'Detach Video'
+      help: 'Detach the video display from the main window, displaying it in a separate Window'
+
+    - name: video/details
+      display: 'Show Video Details'
+      help: 'Show video details'
+
+    - name: video/focus_seek
+      display: 'Toggle video slider focus'
+      help: 'Toggle focus between the video slider and the previous thing to have focus'
+
+    - name: video/frame/copy
+      display: 'Copy image to Clipboard'
+      help: 'Copy the currently displayed frame to the clipboard'
+
+    - name: video/frame/copy/raw
+      display: 'Copy image to Clipboard (no subtitles)'
+      help: 'Copy the currently displayed frame to the clipboard, without the subtitles'
+
+    - name: video/frame/copy/subs
+      display: 'Copy image to Clipboard (only subtitles)'
+      help: 'Copy the currently displayed subtitles to the clipboard, with transparent background'
+
+    - name: video/frame/next
+      display: 'Next Frame'
+      help: 'Seek to the next frame'
+
+    - name: video/frame/next/boundary
+      display: 'Next Boundary'
+      help: 'Seek to the next beginning or end of a subtitle'
+
+    - name: video/frame/next/keyframe
+      display: 'Next Keyframe'
+      help: 'Seek to the next keyframe'
+
+    - name: video/frame/next/large
+      display: 'Fast jump forward'
+      help: 'Fast jump forward'
+
+    - name: video/frame/prev
+      display: 'Previous Frame'
+      help: 'Seek to the previous frame'
+
+    - name: video/frame/prev/boundary
+      display: 'Previous Boundary'
+      help: 'Seek to the previous beginning or end of a subtitle'
+
+    - name: video/frame/prev/keyframe
+      display: 'Previous Keyframe'
+      help: 'Seek to the previous keyframe'
+
+    - name: video/frame/prev/large
+      display: 'Fast jump backwards'
+      help: 'Fast jump backwards'
+
+    - name: video/frame/save
+      display: 'Save PNG snapshot'
+      help: 'Save the currently displayed frame to a PNG file in the video''s directory'
+
+    - name: video/frame/save/raw
+      display: 'Save PNG snapshot (no subtitles)'
+      help: 'Save the currently displayed frame without the subtitles to a PNG file in the video''s directory'
+
+    - name: video/frame/save/subs
+      display: 'Save PNG snapshot (only subtitles)'
+      help: 'Save the currently displayed subtitles with transparent background to a PNG file in the video''s directory'
+
+    - name: video/jump
+      display: 'Jump to'
+      help: 'Jump to frame or time'
+
+    - name: video/jump/end
+      display: 'Jump Video to End'
+      help: 'Jump the video to the end frame of current subtitle'
+
+    - name: video/jump/start
+      display: 'Jump Video to Start'
+      help: 'Jump the video to the start frame of current subtitle'
+
+    - name: video/open
+      display: 'Open Video'
+      help: 'Open a video file'
+
+    - name: video/open/dummy
+      display: 'Use Dummy Video'
+      help: 'Open a placeholder video clip with solid color'
+
+    - name: video/opt/autoscroll
+      display: 'Toggle autoscroll of video'
+      help: 'Toggle automatically seeking video to the start time of selected lines'
+
+    - name: video/play
+      display: 'Play'
+      help: 'Play the video starting on this position'
+
+    - name: video/play/line
+      display: 'Play line'
+      help: 'Play the video for the current line'
+
+    - name: video/reset_pan
+      display: 'Reset Video Pan'
+      help: 'Reset the video''s position in the video display'
+
+    - name: video/show_overscan
+      display: 'Show Overscan Mask'
+      help: 'Show a mask over the video, indicating areas that might get cropped off by overscan on televisions'
+
+    - name: video/stop
+      display: 'Stop video'
+      help: 'Stop video playback'
+
+    - name: video/subtitles_provider/cycle
+      display: 'Cycle active subtitles provider'
+      help: 'Cycle through the available subtitles providers'
+
+    - name: video/tool/clip
+      display: 'Clip'
+      help: 'Clip subtitles to a rectangle'
+
+    - name: video/tool/cross
+      display: 'Standard'
+      help: 'Standard mode, double click sets position'
+
+    - name: video/tool/drag
+      display: 'Drag'
+      help: 'Drag subtitles'
+
+    - name: video/tool/rotate/xy
+      display: 'Rotate XY'
+      help: 'Rotate subtitles on their X and Y axes'
+
+    - name: video/tool/rotate/z
+      display: 'Rotate Z'
+      help: 'Rotate subtitles on their Z axis'
+
+    - name: video/tool/scale
+      display: 'Scale'
+      help: 'Scale subtitles on X and Y axes'
+
+    - name: video/tool/vclip/bicubic
+      display: 'Bicubic'
+      help: 'Append a bezier bicubic curve'
+
+    - name: video/tool/vclip/convert
+      display: 'Convert'
+      help: 'Convert a segment between line and bicubic'
+
+    - name: video/tool/vclip/drag
+      display: 'Drag'
+      help: 'Drag control points'
+
+    - name: video/tool/vclip/freehand
+      display: 'Freehand'
+      help: 'Draw a freehand shape'
+
+    - name: video/tool/vclip/freehand_smooth
+      display: 'Freehand smooth'
+      help: 'Draw a smoothed freehand shape'
+
+    - name: video/tool/vclip/insert
+      display: 'Insert'
+      help: 'Insert a control point'
+
+    - name: video/tool/vclip/line
+      display: 'Line'
+      help: 'Append a line'
+
+    - name: video/tool/vclip/remove
+      display: 'Remove'
+      help: 'Remove a control point'
+
+    - name: video/tool/vector_clip
+      display: 'Vector Clip'
+      help: 'Clip subtitles to a vectorial area'
+
+    - name: video/zoom/100
+      display: '100%'
+      help: 'Set zoom to 100%'
+
+    - name: video/zoom/200
+      display: '200%'
+      help: 'Set zoom to 200%'
+
+    - name: video/zoom/50
+      display: '50%'
+      help: 'Set zoom to 50%'
+
+    - name: video/zoom/in
+      display: 'Zoom In'
+      help: 'Zoom video in'
+
+    - name: video/zoom/out
+      display: 'Zoom Out'
+      help: 'Zoom video out'

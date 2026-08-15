@@ -1,0 +1,1238 @@
+ - locale: zh_CN
+   name: Chinese (Simplified, China)
+   commands:
+    - name: am/manager
+      display: '自动化'
+      help: '打开自动化脚本管理器'
+
+    - name: am/meta
+      display: '自动化'
+      help: '打开自动化脚本管理器。按Ctrl：重新扫描自动加载文件夹。按Ctrl + Shift：重新扫描自动加载文件夹，并重新加载所有自动化脚本'
+
+    - name: am/reload
+      display: '重新载入自动化脚本'
+      help: '重新载入所有自动化脚本，并重新扫描自动加载文件夹'
+
+    - name: am/reload/autoload
+      display: '重新载入自动加载的自动化脚本'
+      help: '重新扫描自动化自动加载文件夹'
+
+    - name: app/about
+      display: '关于'
+      help: '关于 Aegisub'
+
+    - name: app/display/audio_subs
+      display: '音频+字幕模式'
+      help: '仅显示音频和字幕'
+
+    - name: app/display/full
+      display: '完全模式'
+      help: '显示音频、视频和字幕栏'
+
+    - name: app/display/subs
+      display: '仅字幕模式'
+      help: '仅显示字幕栏'
+
+    - name: app/display/video_subs
+      display: '视频+字幕模式'
+      help: '仅显示视频和字幕栏'
+
+    - name: app/exit
+      display: '退出'
+      help: '退出程序'
+
+    - name: app/language
+      display: '语言'
+      help: '选择Aegisub界面语言'
+
+    - name: app/log
+      display: '日志窗口'
+      help: '查看事件记录'
+
+    - name: app/new_window
+      display: '新建窗口'
+      help: '打开一个新的应用窗口'
+
+    - name: app/options
+      display: '选项'
+      help: '配置Aegisub'
+
+    - name: app/toggle/global_hotkeys
+      display: '切换全局热键模式'
+      help: '切换全局热键模式（Medusa模式）'
+
+    - name: app/toggle/toolbar
+      display: '隐藏工具栏'
+      help: '开启和关闭主工具栏'
+
+    - name: app/updates
+      display: '检查更新'
+      help: '检查是否有可用的新版Aegisub'
+
+    - name: audio/close
+      display: '关闭音频'
+      help: '关闭当前开启的音频文件'
+
+    - name: audio/commit
+      display: '提交'
+      help: '提交所有在波形上对时间的更改'
+
+    - name: audio/commit/default
+      display: '提交并在下一行使用默认的时间轴'
+      help: '提交所有挂起的音频时间轴更改，并重置下一行的时间为默认'
+
+    - name: audio/commit/next
+      display: '接受更改并移动到下一行'
+      help: '提交所有通过音频对时间的更改并移动到下一行'
+
+    - name: audio/commit/stay
+      display: '提交并留在当前行'
+      help: '提交所有通过音频对时间的更改并留在当前行'
+
+    - name: audio/go_to
+      display: '转至所选部分'
+      help: '卷动音频使所选部分显示在中间'
+
+    - name: audio/go_to/end
+      display: 'Go to selection end'
+      help: 'Scroll the audio display to center on the end of current audio selection'
+
+    - name: audio/go_to/start
+      display: 'Go to selection start'
+      help: 'Scroll the audio display to center on the start of current audio selection'
+
+    - name: audio/karaoke
+      display: '切换卡拉OK模式'
+      help: '切换卡拉OK模式'
+
+    - name: audio/open
+      display: '打开音频文件'
+      help: '打开一个音频文件'
+
+    - name: audio/open/blank
+      display: '打开150分钟(2h30min)的空白音频'
+      help: '打开一个150分钟的空白音频片段用于除错'
+
+    - name: audio/open/noise
+      display: '打开150分钟(2h30min)的噪音'
+      help: '打开一个150分钟的噪音片段用于除错'
+
+    - name: audio/open/video
+      display: '从视频中打开音频'
+      help: '从当前视频文件中打开音频'
+
+    - name: audio/opt/autocommit
+      display: '自动提交所有更改'
+      help: '自动提交所有更改'
+
+    - name: audio/opt/autonext
+      display: '提交后自动转至下一行'
+      help: '提交后自动转至下一行'
+
+    - name: audio/opt/autoscroll
+      display: '自动卷动音频显示至所选行'
+      help: '自动卷动音频显示至所选行'
+
+    - name: audio/opt/spectrum
+      display: '频谱分析模式'
+      help: '频谱分析模式'
+
+    - name: audio/opt/vertical_link
+      display: '同时调节垂直缩放与音量'
+      help: '同时调节垂直缩放与音量'
+
+    - name: audio/play/current
+      display: '播放当前选择部分音频'
+      help: '播放当前选择部分音频，播放时忽略所做的更改'
+
+    - name: audio/play/line
+      display: '播放当前行'
+      help: '播放当前行'
+
+    - name: audio/play/selection
+      display: '播放选择部分音频'
+      help: '播放音频，直到选择结束为止'
+
+    - name: audio/play/selection/after
+      display: '播放所选部分之后 500 毫秒'
+      help: '播放所选部分之后 500 毫秒'
+
+    - name: audio/play/selection/before
+      display: '播放所选部分之前 500 毫秒'
+      help: '播放所选部分之前 500 毫秒'
+
+    - name: audio/play/selection/begin
+      display: '播放所选部分头 500 毫秒'
+      help: '播放所选部分头 500 毫秒'
+
+    - name: audio/play/selection/end
+      display: '播放所选部分末 500 毫秒'
+      help: '播放所选部分末 500 毫秒'
+
+    - name: audio/play/to_end
+      display: '播放所选部分起始至音频结束'
+      help: '播放所选部分起始至音频结束'
+
+    - name: audio/play/toggle
+      display: '播放选择部分音频或停止'
+      help: '播放选择部分音频，或停止回放如果已经在播放中'
+
+    - name: audio/save/clip
+      display: '创建音频剪辑'
+      help: '创建所选行的音频剪辑'
+
+    - name: audio/scroll/left
+      display: '音频向左卷动'
+      help: '向左卷动音频的显示'
+
+    - name: audio/scroll/right
+      display: '音频向右卷动'
+      help: '向右卷动音频的显示'
+
+    - name: audio/stop
+      display: '停止播放'
+      help: '停止音频和视频回放'
+
+    - name: audio/view/spectrum
+      display: '显示频谱'
+      help: '以频谱方式显示音频'
+
+    - name: audio/view/waveform
+      display: '显示波形'
+      help: '以波形方式显示音频'
+
+    - name: edit/clear
+      display: '清除'
+      help: '清除当前行的所有文本'
+
+    - name: edit/clear/text
+      display: '清除文本'
+      help: '清除当前行的文本，只保留特效标签'
+
+    - name: edit/color/outline
+      display: '边框颜色'
+      help: '设置边框填充色标签(\3c)，应用于光标的位置之后'
+
+    - name: edit/color/primary
+      display: '主要颜色'
+      help: '设置主要填充色标签(\c)，应用于光标的位置之后'
+
+    - name: edit/color/secondary
+      display: '次要颜色'
+      help: '设置次要填充色（用于卡拉OK效果）标签(\2c)，应用于光标的位置之后'
+
+    - name: edit/color/shadow
+      display: '阴影颜色'
+      help: '设置阴影填充色标签(\4c)，应用于光标的位置之后'
+
+    - name: edit/find_replace
+      display: '搜索替换'
+      help: '在字幕中查找并替换字符串'
+
+    - name: edit/font
+      display: '字体'
+      help: '设置字体和大小'
+
+    - name: edit/insert_original
+      display: '插入原文'
+      help: '在光标处插入原文'
+
+    - name: edit/line/copy
+      display: '复制行'
+      help: '复制字幕到剪贴板'
+
+    - name: edit/line/cut
+      display: '剪切行'
+      help: '剪切字幕'
+
+    - name: edit/line/delete
+      display: '删除行'
+      help: '删除当前所选行'
+
+    - name: edit/line/duplicate
+      display: '重复行'
+      help: '重复所选行'
+
+    - name: edit/line/join/as_karaoke
+      display: '视为卡拉OK'
+      help: '将所选行合并为一行，视为卡拉OK'
+
+    - name: edit/line/join/concatenate
+      display: '连接'
+      help: '将所选行合并为一个，文本结合为整体'
+
+    - name: edit/line/join/keep_first
+      display: '保留首行'
+      help: '将所选行合并为一个，仅保留首行文本'
+
+    - name: edit/line/paste
+      display: '粘贴行'
+      help: '粘贴字幕'
+
+    - name: edit/line/paste/over
+      display: '选择性粘贴…'
+      help: '粘贴字幕至选择字段内'
+
+    - name: edit/line/recombine
+      display: '重组行'
+      help: '重新组合已被分割及合并的字幕'
+
+    - name: edit/line/split/after
+      display: '在当前帧后分割行'
+      help: '将当前行以当前帧的时间为界分割为两行，一行在当前帧结束，另一行在下一帧开始'
+
+    - name: edit/line/split/before
+      display: '在当前帧前分割行'
+      help: '将当前行以当前帧的时间为界分割为两行，一行在前一帧结束，另一行在当前帧开始'
+
+    - name: edit/line/split/by_karaoke
+      display: '分割行（按照卡拉OK）'
+      help: '使用卡拉OK时间轴把行分成多个更小的行'
+
+    - name: edit/line/split/estimate
+      display: '在光标处分割（估算时间）'
+      help: '在光标处分割所选行，把原始行的时段分配给新的两行'
+
+    - name: edit/line/split/preserve
+      display: '在光标处分割（保留原时间轴）'
+      help: '在光标处分割所选行，将新的两行的开始结束时间设为原始行的开始结束时间'
+
+    - name: edit/line/split/video
+      display: '在光标处分割（以视频帧）'
+      help: '在光标处分割所选行，以当前帧的时间分割行的持续时间'
+
+    - name: edit/redo
+      display: '无法重做'
+      help: '重做上次撤消的操作'
+
+    - name: edit/revert
+      display: '还原'
+      help: '恢复编辑框的内容到它原来的状态（编辑框上方显示的内容）'
+
+    - name: edit/style/bold
+      display: '加粗'
+      help: '在光标位置添加加粗标签(\b)'
+
+    - name: edit/style/italic
+      display: '斜体'
+      help: '在光标位置添加斜体标签(\i)'
+
+    - name: edit/style/strikeout
+      display: '删除线'
+      help: '在光标位置添加删除线标签(\s)'
+
+    - name: edit/style/underline
+      display: '下划线'
+      help: '在光标位置添加下划线标签(\u)'
+
+    - name: edit/undo
+      display: '无法撤销'
+      help: '撤销上一次操作'
+
+    - name: grid/line/next
+      display: '下一行'
+      help: '移动到下一字幕行'
+
+    - name: grid/line/next/create
+      display: '下一行'
+      help: '移动到下一字幕行，如果需要则创建新一行'
+
+    - name: grid/line/prev
+      display: '上一行'
+      help: '移动到上一字幕行'
+
+    - name: grid/move/down
+      display: '下移行'
+      help: '将选中的行下移一行'
+
+    - name: grid/move/up
+      display: '上移行'
+      help: '将选中的行上移一行'
+
+    - name: grid/sort/actor
+      display: '说话人'
+      help: '按照说话人排序所有字幕'
+
+    - name: grid/sort/actor/selected
+      display: '说话人'
+      help: '按照说话人排序所选字幕'
+
+    - name: grid/sort/effect
+      display: '特效'
+      help: '按照特效排序所有字幕'
+
+    - name: grid/sort/effect/selected
+      display: '特效'
+      help: '按照特效排序所选字幕'
+
+    - name: grid/sort/end
+      display: '结束时间'
+      help: '按照结束时间排序所有字幕'
+
+    - name: grid/sort/end/selected
+      display: '结束时间'
+      help: '按照结束时间排序所选字幕'
+
+    - name: grid/sort/layer
+      display: '层级'
+      help: '按照层级排序所有字幕'
+
+    - name: grid/sort/layer/selected
+      display: '层级'
+      help: '按照层级排序所选字幕'
+
+    - name: grid/sort/start
+      display: '开始时间'
+      help: '按照开始时间排序所有字幕'
+
+    - name: grid/sort/start/selected
+      display: '开始时间'
+      help: '按照开始时间排序所选字幕'
+
+    - name: grid/sort/style
+      display: '样式名称'
+      help: '按照样式名称排序所有字幕'
+
+    - name: grid/sort/style/selected
+      display: '样式名称'
+      help: '按照样式名称排序所选字幕'
+
+    - name: grid/swap
+      display: '互换行'
+      help: '互换所选的两行'
+
+    - name: grid/tag/cycle_hiding
+      display: '切换标签隐藏模式'
+      help: '切换标签隐藏模式'
+
+    - name: grid/tags/hide
+      display: '隐藏所有标签'
+      help: '在字幕栏隐藏特效标签'
+
+    - name: grid/tags/show
+      display: '显示所有标签'
+      help: '在字幕栏显示特效标签'
+
+    - name: grid/tags/simplify
+      display: '显示简化标签'
+      help: '将字幕栏的特效标签替换为符号显示'
+
+    - name: help/bugs
+      display: 'Bug跟踪系统'
+      help: '访问Aegisub的Bug跟踪系统来报告bug和要求新增功能'
+
+    - name: help/contents
+      display: '内容'
+      help: '帮助主题'
+
+    - name: help/irc
+      display: 'IRC 频道'
+      help: '访问Aegisub的官方IRC频道'
+
+    - name: help/video
+      display: '可视化排版'
+      help: '打开可视化排版的操作手册页面'
+
+    - name: help/website
+      display: '网站'
+      help: '访问Aegisub的官方网站'
+
+    - name: keyframe/close
+      display: '关闭关键帧'
+      help: '丢弃当前加载的关键帧，并使用来自视频的关键帧，如果有的话'
+
+    - name: keyframe/open
+      display: '打开关键帧'
+      help: '打开一个关键帧列表文件'
+
+    - name: keyframe/save
+      display: '保存关键帧'
+      help: '保存当前的关键帧列表'
+
+    - name: recent/audio
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/0
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/1
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/10
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/11
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/12
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/13
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/14
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/15
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/2
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/3
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/4
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/5
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/6
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/7
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/8
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/audio/9
+      display: '最近打开'
+      help: '打开最近打开的音频文件'
+
+    - name: recent/keyframe
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/0
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/1
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/10
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/11
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/12
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/13
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/14
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/15
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/2
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/3
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/4
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/5
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/6
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/7
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/8
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/keyframes/9
+      display: '最近打开'
+      help: '打开最近打开的关键帧'
+
+    - name: recent/subtitle
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/0
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/1
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/10
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/11
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/12
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/13
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/14
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/15
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/2
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/3
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/4
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/5
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/6
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/7
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/8
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/subtitle/9
+      display: '最近打开'
+      help: '打开最近打开的字幕文件'
+
+    - name: recent/timecodes
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/0
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/1
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/10
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/11
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/12
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/13
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/14
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/15
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/2
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/3
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/4
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/5
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/6
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/7
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/8
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/timecodes/9
+      display: '最近打开'
+      help: '打开最近打开的时间码文件'
+
+    - name: recent/video
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/0
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/1
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/10
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/11
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/12
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/13
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/14
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/15
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/2
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/3
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/4
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/5
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/6
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/7
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/8
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: recent/video/9
+      display: '最近打开'
+      help: '打开最近打开的视频文件'
+
+    - name: subtitle/attachment
+      display: '附件'
+      help: '打开附件管理器'
+
+    - name: subtitle/close
+      display: '关闭'
+      help: '关闭'
+
+    - name: subtitle/find
+      display: '查找'
+      help: '在字幕中查找文本'
+
+    - name: subtitle/find/next
+      display: '查找下一个'
+      help: '查找下一个匹配的搜索'
+
+    - name: subtitle/insert/after
+      display: '当前行之后'
+      help: '在当前行之后插入一行'
+
+    - name: subtitle/insert/after/videotime
+      display: '当前行之后，以视频时间起始'
+      help: '在当前行之后插入一行，以视频时间作为开始时间'
+
+    - name: subtitle/insert/before
+      display: '当前行之前'
+      help: '在当前行之前插入一行'
+
+    - name: subtitle/insert/before/videotime
+      display: '当前行之前，以视频时间起始'
+      help: '在当前行之前插入一行，以视频时间作为开始时间'
+
+    - name: subtitle/new
+      display: '新建字幕'
+      help: '新建字幕'
+
+    - name: subtitle/open
+      display: '打开字幕'
+      help: '打开字幕文件'
+
+    - name: subtitle/open/autosave
+      display: '打开自动保存的字幕'
+      help: '打开一个Aegisub自动保存的旧版本文件'
+
+    - name: subtitle/open/charset
+      display: '打开字幕并指定编码'
+      help: '以指定编码打开字幕文件'
+
+    - name: subtitle/open/video
+      display: '从视频中打开字幕'
+      help: '从当前视频中打开内封字幕'
+
+    - name: subtitle/properties
+      display: '属性'
+      help: '打开脚本配置窗口'
+
+    - name: subtitle/save
+      display: '保存字幕'
+      help: '保存当前字幕文件'
+
+    - name: subtitle/save/as
+      display: '另存为字幕'
+      help: '以其它文件名保存字幕'
+
+    - name: subtitle/select/all
+      display: '全部选择'
+      help: '选择所有行'
+
+    - name: subtitle/select/visible
+      display: '选择可见行'
+      help: '选择当前视频帧中可见的所有行'
+
+    - name: subtitle/spellcheck
+      display: '拼写检查器'
+      help: '打开拼写检查器'
+
+    - name: time/continuous/end
+      display: '更改结束时间'
+      help: '更改字幕时间，使结束时间到后一行的开始时间为止'
+
+    - name: time/continuous/start
+      display: '更改开始时间'
+      help: '更改字幕时间，使开始时间从前一行的结束时间开始'
+
+    - name: time/frame/current
+      display: '平移至当前帧'
+      help: '平移所选行使选中的行始于当前帧'
+
+    - name: time/lead/both
+      display: '添加开始提前及结束延后'
+      help: '同时开始提前、结束延后所选行'
+
+    - name: time/lead/in
+      display: '添加开始提前'
+      help: '为所选行的开始时间提前指定的时间'
+
+    - name: time/lead/out
+      display: '添加结束延后'
+      help: '为所选行的结束时间延后指定的时间'
+
+    - name: time/length/decrease
+      display: '减少长度'
+      help: '较少当前时间轴的长度'
+
+    - name: time/length/decrease/shift
+      display: '减少长度并偏移'
+      help: '减少当前时间轴的长度并平移后续项目'
+
+    - name: time/length/increase
+      display: '增加长度'
+      help: '增加当前时间轴的长度'
+
+    - name: time/length/increase/shift
+      display: '增加长度并平移'
+      help: '增加当前时间轴的长度并平移后续项目'
+
+    - name: time/next
+      display: '下一行'
+      help: '下一行／音节'
+
+    - name: time/prev
+      display: '上一行'
+      help: '上一行／音节'
+
+    - name: time/shift
+      display: '平移时间'
+      help: '按照时间或帧平移字幕'
+
+    - name: time/snap/end_video
+      display: '设置结束时间到视频'
+      help: '将当前视频帧设为所选字幕的结束时间'
+
+    - name: time/snap/scene
+      display: '紧贴镜头'
+      help: '设置字幕的开始与结束紧贴至当前视频帧附近的关键帧'
+
+    - name: time/snap/start_video
+      display: '视频抓取为开始时间'
+      help: '将当前视频帧设为所选字幕的开始时间'
+
+    - name: time/start/decrease
+      display: '向后平移开始时间'
+      help: '向后平移当前时间轴的开始时间'
+
+    - name: time/start/increase
+      display: '向前平移开始时间'
+      help: '向前平移当前时间轴的开始时间'
+
+    - name: timecode/close
+      display: '关闭时间码文件'
+      help: '关闭当前打开的时间码文件'
+
+    - name: timecode/open
+      display: '打开时间码文件…'
+      help: '打开一个可变帧率时间码(VFR timecode)v1或v2文件'
+
+    - name: timecode/save
+      display: '保存时间码文件'
+      help: '保存一个可变帧率时间码(VFR timecode)v1或v2文件'
+
+    - name: tool/export
+      display: '导出字幕'
+      help: '保存一个处理后的不同格式的字幕副本'
+
+    - name: tool/font_collector
+      display: '字体收集器'
+      help: '打开字体收集器'
+
+    - name: tool/line/select
+      display: '选择多行'
+      help: '按照指定要求选择多行'
+
+    - name: tool/resampleres
+      display: '重设分辨率'
+      help: '更改分辨率并修改字幕以配合更改'
+
+    - name: tool/style/assistant
+      display: '样式助手'
+      help: '打开样式助手'
+
+    - name: tool/style/manager
+      display: '样式管理器'
+      help: '打开样式管理器'
+
+    - name: tool/styling_assistant/commit
+      display: '接受更改'
+      help: '接受更改并移动到下一行'
+
+    - name: tool/styling_assistant/preview
+      display: '预览更改'
+      help: '接受更改并停留在当前行'
+
+    - name: tool/time/kanji
+      display: '汉字K值配对'
+      help: '打开汉字K值配对'
+
+    - name: tool/time/postprocess
+      display: '时间后续处理器'
+      help: '运行时间后续处理器来处理时间开始提前、结束延后以及场景变化对帧等'
+
+    - name: tool/translation_assistant
+      display: '翻译助手'
+      help: '打开翻译助手'
+
+    - name: tool/translation_assistant/commit
+      display: '接受更改'
+      help: '接受更改并移动到下一行'
+
+    - name: tool/translation_assistant/insert_original
+      display: '插入原文'
+      help: '插入未翻译的文本'
+
+    - name: tool/translation_assistant/next
+      display: '下一行'
+      help: '不提交更改移至下一行'
+
+    - name: tool/translation_assistant/prev
+      display: '上一行'
+      help: '不提交更改移至上一行'
+
+    - name: tool/translation_assistant/preview
+      display: '预览更改'
+      help: '接受更改并停留在当前行'
+
+    - name: video/aspect/cinematic
+      display: '电影（2.35）'
+      help: '强制以 2.35:1 的比例显示视频画面'
+
+    - name: video/aspect/custom
+      display: '自选'
+      help: '将视频强制显示为自定义宽高比'
+
+    - name: video/aspect/default
+      display: '默认'
+      help: '保持视频原始宽高比'
+
+    - name: video/aspect/full
+      display: '全屏4:3'
+      help: '强制以 4:3 的比例显示视频画面'
+
+    - name: video/aspect/wide
+      display: '宽屏16:9'
+      help: '强制以 16:9 的比例显示视频画面'
+
+    - name: video/close
+      display: '关闭视频'
+      help: '关闭当前打开的视频文件'
+
+    - name: video/copy_coordinates
+      display: '复制坐标至剪贴板'
+      help: '复制当前鼠标在视频上的坐标到剪贴板'
+
+    - name: video/detach
+      display: '拆分视频'
+      help: '从主界面分离视频，在一个单独窗口显示'
+
+    - name: video/details
+      display: '显示视频详情'
+      help: '显示视频详情'
+
+    - name: video/focus_seek
+      display: '切换视频滑块焦点'
+      help: '使焦点在视频滑块与之前的焦点之间切换'
+
+    - name: video/frame/copy
+      display: '复制图像至剪贴板'
+      help: '将当前显示的画面复制到剪贴板'
+
+    - name: video/frame/copy/raw
+      display: '复制图像至剪贴板（不带字幕）'
+      help: '将当前显示的画面复制到剪贴板，不带字幕'
+
+    - name: video/frame/copy/subs
+      display: 'Copy image to Clipboard (only subtitles)'
+      help: 'Copy the currently displayed subtitles to the clipboard, with transparent background'
+
+    - name: video/frame/next
+      display: '下一帧'
+      help: '移至下一帧'
+
+    - name: video/frame/next/boundary
+      display: '下一个字幕开始/结束时刻'
+      help: '移至前一行字幕的开始或结束时间'
+
+    - name: video/frame/next/keyframe
+      display: '下一关键帧'
+      help: '移至下一关键帧'
+
+    - name: video/frame/next/large
+      display: '快速向前跳帧'
+      help: '快速向前跳帧'
+
+    - name: video/frame/prev
+      display: '上一帧'
+      help: '移至上一帧'
+
+    - name: video/frame/prev/boundary
+      display: '上一个字幕开始/结束时刻'
+      help: '移至上一个字幕开始/结束时刻'
+
+    - name: video/frame/prev/keyframe
+      display: '上一关键帧'
+      help: '移至上一关键帧'
+
+    - name: video/frame/prev/large
+      display: '快速向后跳帧'
+      help: '快速向后跳帧'
+
+    - name: video/frame/save
+      display: '保存 PNG 截图'
+      help: '保存当前显示帧为PNG格式到视频所在目录'
+
+    - name: video/frame/save/raw
+      display: '储存 PNG 截图（不带字幕）'
+      help: '保存当前显示帧（不带字幕）为PNG格式到视频所在目录'
+
+    - name: video/frame/save/subs
+      display: 'Save PNG snapshot (only subtitles)'
+      help: 'Save the currently displayed subtitles with transparent background to a PNG file in the video''s directory'
+
+    - name: video/jump
+      display: '跳转至'
+      help: '跳至指定帧或时间'
+
+    - name: video/jump/end
+      display: '视频跳至结束时间'
+      help: '视频跳至当前字幕的结束帧'
+
+    - name: video/jump/start
+      display: '视频跳至开始时间'
+      help: '视频跳至当前字幕的起始帧'
+
+    - name: video/open
+      display: '打开视频'
+      help: '打开一个视频文件'
+
+    - name: video/open/dummy
+      display: '使用空白视频'
+      help: '打开一个纯色的空白视频片段'
+
+    - name: video/opt/autoscroll
+      display: '切换视频自动卷动'
+      help: '自动将视频移至所选字幕的开始时间'
+
+    - name: video/play
+      display: '播放'
+      help: '从该位置开始播放视频'
+
+    - name: video/play/line
+      display: '播放字幕行'
+      help: 'Play the video for the current line'
+
+    - name: video/reset_pan
+      display: 'Reset Video Pan'
+      help: 'Reset the video''s position in the video display'
+
+    - name: video/show_overscan
+      display: '显示过扫描遮罩'
+      help: '在视频上显示一个遮罩，表示这些区域可能在一些电视上会因过扫描而被剪切'
+
+    - name: video/stop
+      display: '停止视频'
+      help: '停止视频回放'
+
+    - name: video/subtitles_provider/cycle
+      display: '切换字幕来源'
+      help: '在可用的字幕来源中切换'
+
+    - name: video/tool/clip
+      display: '裁剪'
+      help: '裁剪字幕为一个矩形'
+
+    - name: video/tool/cross
+      display: '标准'
+      help: '标准模式，双击设定位置'
+
+    - name: video/tool/drag
+      display: '移动'
+      help: '拖放字幕'
+
+    - name: video/tool/rotate/xy
+      display: '旋转 XY'
+      help: '绕X轴和Y轴旋转字幕'
+
+    - name: video/tool/rotate/z
+      display: '旋转 Z'
+      help: '绕Z轴旋转字幕'
+
+    - name: video/tool/scale
+      display: '缩放'
+      help: '沿X轴和Y轴方向缩放'
+
+    - name: video/tool/vclip/bicubic
+      display: '两次立方曲线'
+      help: '添加一条双三次贝塞尔曲线'
+
+    - name: video/tool/vclip/convert
+      display: '转换'
+      help: '将一条线段在直线和曲线之间转换'
+
+    - name: video/tool/vclip/drag
+      display: '移动'
+      help: '拖放控制点'
+
+    - name: video/tool/vclip/freehand
+      display: '手绘'
+      help: '画一个手绘形状'
+
+    - name: video/tool/vclip/freehand_smooth
+      display: '平滑手绘'
+      help: '画一个平滑的手绘形状'
+
+    - name: video/tool/vclip/insert
+      display: '插入'
+      help: '插入一个控制点'
+
+    - name: video/tool/vclip/line
+      display: '直线'
+      help: '添加一条直线'
+
+    - name: video/tool/vclip/remove
+      display: '移除'
+      help: '移除一个控制点'
+
+    - name: video/tool/vector_clip
+      display: '矢量裁剪'
+      help: '裁剪字幕为一个矢量区域'
+
+    - name: video/zoom/100
+      display: '100%'
+      help: '设置缩放为100%'
+
+    - name: video/zoom/200
+      display: '200%'
+      help: '设置缩放为200%'
+
+    - name: video/zoom/50
+      display: '50%'
+      help: '设置缩放为50%'
+
+    - name: video/zoom/in
+      display: '放大'
+      help: '放大视频'
+
+    - name: video/zoom/out
+      display: '缩小'
+      help: '缩小视频'
