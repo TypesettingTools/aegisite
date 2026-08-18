@@ -18,7 +18,7 @@ The properties are:
 
 - **Title**, **Original script**, **Translation**, **Editing**, **Timing**, **Synch point**, **Updated by** and **Update details** - These are for informational purposes only and do not affect rendering in any way. Set them to appropriate values if you find them useful.
 
-- **Resolution**, **YCbCr Matrix**, **Scale border and shadow** - See the [Script Resolution]({{< relref "Script_Resolution" >}}) page for the meaning of these fields.
+- **Resolution**, **YCbCr Matrix**, **Scale border and shadow** - See the [Resolution and Matrix]({{< relref "Resolution_and_Matrix" >}}) page for the meaning of these fields.
 
 - **Wrap style** - Controls how the subtitle renderer will break lines that are too long to fit on one line. The modes are:
 

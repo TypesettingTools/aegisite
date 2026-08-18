@@ -14,7 +14,7 @@ Las propiedades son:
 
 - **Título**, **Guion original**, **Traducción**, **Edición**, **Sicronización**, **Punto de sinc**, **Cambiado por** y **Detalles de cambios** - Estas son solo de propósitos informacionales y no afectan el renderizado de ninguna manera. Fíjelas en valores apropiados si a uno le parecen útiles.
 
-- **Resolución**, **Matriz YCbCr**, **Escala de contorno y sombra** - Consulte la página [Resolución de guion]({{<relref path="Script_Resolution" lang="en">}}) para el significado de estas opciones.
+- **Resolución**, **Matriz YCbCr**, **Escala de contorno y sombra** - Consulte la página [Resolución de guion]({{<relref path="Resolution_and_Matrix" lang="en">}}) para el significado de estas opciones.
 
 - **Estilo de salto** - Controla cómo el renderizador de subtítulos mete saltos en renglones demasiado largos como para caber en una sola línea. Los modos son:
 

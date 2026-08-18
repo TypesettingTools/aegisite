@@ -1,10 +1,11 @@
 ---
-title: Script Resolution
+title: Resolution and Matrix
 menu:
   docs:
     parent: miscellaneous
 weight: 7400
 aliases:
+  - /docs/latest/script_resolution/
   - /docs/latest/Script_Resolution/
 ---
 
