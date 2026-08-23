@@ -31,6 +31,7 @@ If the new resolution and old resolution don't have the same aspect ratio, you h
 
 1. Stretch the subtitles to the new AR.
    This is intended for when one or both of the resolutions is anamorphic, and actually represent the same picture.
+   Note that blur and three-dimensional rotations will not be preserved exactly when stretching to a differing aspect ratio.
 1. Automatically add the required margins to center the old video within the new video.
    Use this if your new video has black borders or shows more of the picture than the old one.
 1. Automatically remove the required margins to center the old video within the new video.
