@@ -55,9 +55,9 @@ Displays and allows changing the current video zoom.
 ### Video position slider
 
 Used to seek the video. Holding shift while dragging the thumb snaps to
-keyframes. By default, left/right seek forward/backward one frame;
-alt-left/right seek forward/backward 10 frames; shift-left/right seek
-forward/backwards one keyframe. The slider can be focused without
+keyframes. By default, left/right seek backward/forward one frame;
+alt-left/right seek backward/forward 10 frames; shift-left/right seek
+backward/forward one keyframe. The slider can be focused without
 accidentally seeking by right-clicking it or pressing Ctrl-Space. If the
 slider already has focus, Ctrl-Space will return keyboard focus to the
 control that last had it.
