@@ -225,6 +225,7 @@ change happened, and ctrl to limit it to increments of 25%.
 The rectangular clip tool allows you to clip the subtitles so that nothing
 OUTSIDE an axis-aligned rectangle can be displayed (in essence, the
 `\clip(x1,y1,x2,y2)` tag).
+Inverse rectangular clips via `\iclip(x1,y1,x2,y2)` can also be modified.
 
 ![Visual_clip](/img/3.2/Visual_clip.png#center)
 
