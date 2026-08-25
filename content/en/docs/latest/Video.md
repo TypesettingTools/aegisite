@@ -188,8 +188,8 @@ first frame of the video is frame number 0.
 
 Aegisub supports loading and working with variable framerate video. The how's
 and why's of VFR is far outside the scope of this manual (see for example [the
-VFR thread on AnimeSuki](https://forums.animesuki.com/showthread.php?t=34738) or
-the [Avisynth manual page](https://avisynth.org/mediawiki/VFR) for more
+VFR thread on AnimeSuki](https://web.archive.org/web/20100716011431/https://forums.animesuki.com/showthread.php?t=34738) or
+the [Avisynth manual page](http://www.avisynth.nl/index.php/VFR) for more
 information about VFR), but we will cover what you need to know about how
 Aegisub handles it.
 
@@ -303,7 +303,7 @@ deeply obfuscated topic that appears simple at a glance) the following links
 may be of interest:
 
 - [A Quick Guide to Digital Video Resolution and Aspect Ratio
-  Conversions](https://lipas.uwasa.fi/~f76998/video/conversion/) - Absolutely
+  Conversions](https://web.archive.org/web/20110720195356/https://lipas.uwasa.fi/~f76998/video/conversion/) - Absolutely
   essential reading for anyone who wants to really understand the topic, but
   unfortunately far more than everything most people ever wanted to know about
   it.
