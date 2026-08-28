@@ -190,7 +190,7 @@ For example, if there are two syllables, "ab" and "cd", and the above two templa
 
 ### fx _name_
 
-Make template only apply to syllables that have the named [inline-fx]({{< relref "Karaoke_inline-fx" >}}). Specifying an inline-fx name is required; the name may also overlap with template modifier names though this is not recommended.
+Make template only apply to syllables that have the named [inline-fx]({{< relref "../../Karaoke_inline-fx" >}}). Specifying an inline-fx name is required; the name may also overlap with template modifier names though this is not recommended.
 
 {{<example-box>}}
 
@@ -231,7 +231,7 @@ The _notags_ modifier ensures that the special colour of the special syllable ge
 
 ### multi
 
-Make the template apply per-highlight in [multi-highlight]({{< relref "Furigana_karaoke" >}}) timed karaoke. This changes application order semantics in a significant way, see [Template execution and order]({{< relref "./Template_execution_rules_and_order" >}}) for details.
+Make the template apply per-highlight in [multi-highlight]({{< relref "../../Furigana_karaoke" >}}) timed karaoke. This changes application order semantics in a significant way, see [Template execution and order]({{< relref "./Template_execution_rules_and_order" >}}) for details.
 
 While this will work on code lines, it is generally not useful, see the discussion on execution order.
 

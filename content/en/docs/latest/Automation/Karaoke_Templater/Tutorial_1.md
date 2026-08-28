@@ -36,7 +36,7 @@ But there is something else to make sure of first.
 Karaoke Templater can do many things for you, but it can't guess the lyrics for
 your song, or how they're synchronised with the music. You'll have to time the
 lyrics yourself, or get someone else to do it. You can learn how to time
-karaoke at the [Karaoke_Timing_Tutorial]({{< relref "Karaoke_Timing_Tutorial" >}}).
+karaoke at the [Karaoke_Timing_Tutorial]({{< relref "../../Karaoke_Timing_Tutorial" >}}).
 
 We'll call song lyrics with basic karaoke timing (\\k timing), but no other
 special effects, _timed karaoke_. When an effect has been applied to the
@@ -156,7 +156,7 @@ now.
     back into a \\k tag, like we did here.
 
 With this knowledge, you should already be able to create lots of effects. You
-may also want to refer to the page on [ASS override tags]({{< relref "ASS_Tags" >}}).
+may also want to refer to the page on [ASS override tags]({{< relref "../../ASS_Tags" >}}).
 
 You can also [continue to the next tutorial]({{< relref "./Tutorial_2" >}}), where we'll look at how to
 do math with variables to get more variation.

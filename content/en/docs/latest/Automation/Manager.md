@@ -9,7 +9,7 @@ aliases:
 ---
 
 The Automation Manager window is used to view, load and unload
-[Automation]({{< relref "Automation" >}}) scripts.
+[Automation]({{< relref "../Automation" >}}) scripts.
 
 The Automation Manager window is opened from the _Automation_ menu or with
 the ![Automation-toolbar-icon](/img/3.2/Automation-toolbar-icon.png) toolbar button.
@@ -67,15 +67,15 @@ If you're developing scripts you might find yourself returning to the
 Automation Manager often to reload your script. There are also faster ways
 to reload scripts though:
 
-- When the [Export]({{< relref "Exporting" >}}) dialog is opened all local scripts are
-  reloaded. You can change this in the [Options]({{< relref "Options#automation" >}})
+- When the [Export]({{< relref "../Exporting" >}}) dialog is opened all local scripts are
+  reloaded. You can change this in the [Options]({{< relref "../Options#automation" >}})
   dialog.
 - Hold the Ctrl key and click the Automation toolbar button to rescan the
   autoload folders.
 - Hold both the Ctrl and Shift keys and click the Automation toolbar button
   to reload all scripts, also rescanning the autoload folders.
 - While there is no default hotkey to reload all scripts, you can add one in
-  the [preferences dialog]({{< relref "Options#hotkeys" >}}).
+  the [preferences dialog]({{< relref "../Options#hotkeys" >}}).
 
 The Automation Manager won't open when any of there methods are used, but
 you will get an error message window if a script failed to load. Note that

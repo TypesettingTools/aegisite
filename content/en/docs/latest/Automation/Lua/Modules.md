@@ -10,12 +10,12 @@ aliases:
 ---
 
 A number of Lua modules are included with Aegisub.
-Some of these, such as [`karaskel.lua`]({{< relref "karaskel.lua.md" >}}) implement subtitle-specific functionality, while others such as [re]({{< relref "re" >}}) fill holes in the Lua standard library.
+Some of these, such as [`karaskel.lua`]({{< relref "Modules/karaskel.lua.md" >}}) implement subtitle-specific functionality, while others such as [re]({{< relref "Modules/re" >}}) fill holes in the Lua standard library.
 
 ## Using modules
 
 Simply write `modulename = require 'aegisub.modulename'` at the top level of a script.
-For example, to include the [re]({{< relref "re" >}}) modules, `re = require 'aegisub.re'`.
+For example, to include the [re]({{< relref "Modules/re" >}}) modules, `re = require 'aegisub.re'`.
 
 Note that if you look at older scripts you will probably see several other methods for including modules, such as `include`.
 These have been deprecated in favor of following the modern lua module style introduced with Lua 5.2.

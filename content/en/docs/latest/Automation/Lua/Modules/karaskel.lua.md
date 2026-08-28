@@ -32,7 +32,7 @@ Reads the subtitle file to collect all header information and style
 definitions, and optionally also generates new styles for furigana layouts.
 
 - `subtitles` is the Subtitle File object defined by Automation 4 Lua.
-- `generate_furigana` is a boolean: if it is true a style for [furigana layout]({{< relref "Furigana_karaoke" >}}) is generated for each style that does not have
+- `generate_furigana` is a boolean: if it is true a style for [furigana layout]({{< relref "../../../Furigana_karaoke" >}}) is generated for each style that does not have
   one already. Generation of furigana styles will never overwrite existing
   styles, create double style definitions or create meaningless furigana
   styles for other furigana styles.
@@ -442,7 +442,7 @@ Additions by `karaskel.preproc_line_text`:
 - `syl.kdur` - Syllable duration in centiseconds, suitable for use in `\k`
   tags.
 - `syl.line` - Back reference to the line table containing this syllable.
-- `syl.inline_fx` - Name of the [_inline-fx_]({{< relref "Karaoke_inline-fx" >}}) for this
+- `syl.inline_fx` - Name of the [_inline-fx_]({{< relref "../../../Karaoke_inline-fx" >}}) for this
   syllable.
 - `syl.i` - Index number of this syllable.
 - `syl.prespace`, `syl.postspace` - Space characaters at the start/end of

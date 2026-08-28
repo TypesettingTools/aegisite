@@ -162,14 +162,14 @@ Get a list of what video frames are keyframes.
 
 Synopsis `path = aegisub.decode_path(encoded_path)`
 
-Convert a path beginning with a [path specifier]({{< relref "Aegisub_path_specifiers" >}})
+Convert a path beginning with a [path specifier]({{< relref "../../Aegisub_path_specifiers" >}})
 to an absolute path.
 
 `@encoded_path` (`string`)
-: A string which may optionally begin with an Aegisub [path specifier]({{< relref "Aegisub_path_specifiers" >}}).
+: A string which may optionally begin with an Aegisub [path specifier]({{< relref "../../Aegisub_path_specifiers" >}}).
 
 `@path` (`string`)
-: If `encoded_path` began with a valid [path specifier]({{< relref "Aegisub_path_specifiers" >}}), an absolute path. If it began with an
+: If `encoded_path` began with a valid [path specifier]({{< relref "../../Aegisub_path_specifiers" >}}), an absolute path. If it began with an
   invalid path specifier (such as if ?video was used when no video is open),
   a string that is unlikely to be useful in any way. Any other strings are
   passed through untouched.

@@ -64,7 +64,7 @@ The first thing kara-templater does is simply use
 [karaskel]({{< relref "../Lua/Modules/karaskel.lua.md" >}}) to collect some basic
 information on the subtitle file. It always passes `true` for
 _generate_furigana_ in the `karaskel.collect_head` function, meaning that
-[furigana]({{< relref "Furigana_karaoke" >}}) styles are always generated, unless they already
+[furigana]({{< relref "../../Furigana_karaoke" >}}) styles are always generated, unless they already
 exist.
 
 It then collects all template lines in the file.

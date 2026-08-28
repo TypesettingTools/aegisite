@@ -8,7 +8,7 @@ aliases:
   - /docs/latest/Automation/Lua/Registration/
 ---
 
-**Registration** covers presenting your [Automation 4 Lua]({{< relref "Lua" >}})
+**Registration** covers presenting your [Automation 4 Lua]({{< relref "../Lua" >}})
 script to Aegisub, providing information about it and registering what
 _features_ it provides.
 
@@ -30,7 +30,7 @@ menu item) and an optional validation function (determines whether the macro
 can even do any work in the current state.)
 
 Another feature is the **export filter**. The export filter is presented in
-the [Export]({{< relref "Exporting" >}}) dialogue and can be applied during an export
+the [Export]({{< relref "../../Exporting" >}}) dialogue and can be applied during an export
 operation. Export filters also have a name, description, processing function
 and then an optional configuration panel provider. The configuration panel
 provider is a function that returns a configuration dialogue definition

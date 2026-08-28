@@ -59,7 +59,7 @@ piece of text will be when rendered with a given style.
 
 Most things that can be implemented in clean Lua code, i.e. that don't
 depend directly on Aegisub internal data structures, have been implemented
-outside the core API as [Lua modules]({{< relref "Modules" >}}). While it is possible to write
+outside the core API as [Lua modules]({{< relref "Lua/Modules" >}}). While it is possible to write
 Automation 4 Lua scripts without using the provided standard include files
 you will find that for anything but the simplest scripts you will need some
 of the functions provided by the includes.

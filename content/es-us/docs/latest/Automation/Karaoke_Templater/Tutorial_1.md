@@ -24,7 +24,7 @@ Pero hay algo más de qué asegurarnos primero.
 
 ## Karaoke sincronizado
 
-Karaoke Templater puede hacer muchas cosas por usted, pero no puede adivinar la letra de una canción ni cómo se sincroniza con la música. Tendrá que sincronizar la letra uno mismo o pedirle a alguien más que lo haga. Puede aprender a sincronizar el karaoke en el [tutorial de sincronizar karaoke]({{<relref path="Karaoke_Timing_Tutorial" lang="en">}}).
+Karaoke Templater puede hacer muchas cosas por usted, pero no puede adivinar la letra de una canción ni cómo se sincroniza con la música. Tendrá que sincronizar la letra uno mismo o pedirle a alguien más que lo haga. Puede aprender a sincronizar el karaoke en el [tutorial de sincronizar karaoke]({{<relref path="../../Karaoke_Timing_Tutorial" lang="en">}}).
 
 Llamaremos a las letras de canciones con sincronización básica de karaoke (\\k timing), pero sin otros efectos, _karaoke sincronizado_. Cuando se ha aplicado un efecto al karaoke lo llamaremos _karaoke estilizado_.
 
