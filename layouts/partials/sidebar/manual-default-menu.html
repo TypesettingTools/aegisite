@@ -1,6 +1,11 @@
 <!-- Manual default section menu -->
 {{ $currentPage := . -}}
 {{ $section := $currentPage.Section -}}
+{{ range .Menus }}
+  {{ if hasPrefix .Menu "docs-" }}
+    {{ $section = .Menu }}
+  {{ end }}
+{{ end }}
 {{ range (index .Site.Menus $section) -}}
   <h3 class="h6 text-uppercase mb-2">{{ .Name }}</h3>
   {{ if .HasChildren -}}

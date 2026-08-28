@@ -4,7 +4,11 @@ title: Aegisub Docs
 
 <p>
 <br />
-<a href="latest/" class="btn btn-primary" role="button">3.4 Manual</a> Latest user manual
+<a href="latest/" class="btn btn-primary" role="button">3.x Manual</a> Latest user manual
+</p>
+<p>
+<br />
+<a href="3.5/" class="btn btn-outline-secondary" role="button">3.5 Manual</a> User manual for 3.5.
 </p>
 <p>
 <br />

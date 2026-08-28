@@ -1,6 +1,11 @@
 <!-- Auto default section menu -->
 {{ $currentPage := . -}}
 {{ $section := $currentPage.Section -}}
+{{ range .Menus }}
+  {{ if hasPrefix .Menu "docs-" }}
+    {{ $section = .Menu }}
+  {{ end }}
+{{ end }}
 {{ range (where .Site.Sections "Section" "in" $section) }}
   {{ range .Sections.ByWeight.Reverse }}
     {{ $active := in $currentPage.RelPermalink .RelPermalink }}
