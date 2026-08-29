@@ -4,6 +4,8 @@ menu:
   docs:
     parent: navigation
 weight: 1000
+aliases:
+  - /docs/latest/
 ---
 
 Bienvenido al manual Aegisub. Vea nuestra página [Acerca de]({{<relref path="About">}}) para más info del programa, o explore los temas en el panel a la izquierda.

@@ -1,8 +1,10 @@
-{{ if or .Prev .Next -}}
+{{ $pages := where .CurrentSection.RegularPages "Type" "not in" (slice "redirect" "glossary") -}}
+{{ $next := $pages.Next . -}}
+{{ $prev := $pages.Prev . -}}
+{{ if or $next $prev -}}
 	<div class="docs-navigation d-flex justify-content-between">
 	<!-- https://www.feliciano.tech/blog/custom-sort-hugo-single-pages/ -->
-	{{ $pages := where (where (where site.RegularPages "Section" .Section) "Type" "!=" "redirect") "Type" "!=" "glossary" -}}
-	{{ with $pages.Next . -}}
+	{{ with $next -}}
 		<a href="{{ .RelPermalink }}">
 			<div class="card my-1">
 				<div class="card-body py-2">
@@ -11,7 +13,7 @@
 			</div>
 		</a>
 	{{ end -}}
-	{{ with $pages.Prev . -}}
+	{{ with $prev -}}
 		<a class="ms-auto" href="{{ .RelPermalink }}">
 			<div class="card my-1">
 				<div class="card-body py-2">

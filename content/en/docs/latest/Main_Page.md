@@ -5,6 +5,7 @@ menu:
     parent: navigation
 weight: 1000
 aliases:
+  - /docs/latest/
   - /docs/latest/Main_Page/
 ---
 
