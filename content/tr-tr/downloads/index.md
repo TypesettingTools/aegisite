@@ -10,10 +10,6 @@ layout: Downloads
 
 {{< current-version >}}
 
-## Yaklaşan Sürümler
-
-CI derlemesini kontrol edin
-
 ## Sözlükler
 
 Yükleme paketinin boyutunu küçültmek amacıyla, Windows yükleyicisinde yalnızca İngilizce (ABD) yazım denetimi sözlüğü yer almaktadır. Diğer diller için sözlükler ayrı olarak indirilebilir:

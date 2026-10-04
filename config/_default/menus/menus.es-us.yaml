@@ -114,7 +114,7 @@ docs:
     weight: 2720
     identifier: karaoke-inline-fx
     parent: tutorials
-    url: Karaoke_inline-fx
+    url: /docs/latest/Karaoke_inline-fx
   - name: Tutorial de Furigana
     weight: 2730
     identifier: furigana-karaoke

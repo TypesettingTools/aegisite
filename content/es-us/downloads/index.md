@@ -10,10 +10,6 @@ Vea [changelog]({{< relref path="changelog/" lang="en" >}}{{< current-version-nu
 
 {{< current-version >}}
 
-## Versiones pendientes
-
-Revise la CI build
-
 ## Diccionarios
 
 Para reducir el tamaño de descarga, la instalación "completa" Windows incluye solo

@@ -5,13 +5,13 @@ var pre = document.getElementsByTagName('pre');
 for (var i = 0; i < pre.length; ++ i)
 {
   var element = pre[i];
-  element.insertAdjacentHTML('afterbegin', '<button class="btn btn-copy"></button>');
+  element.insertAdjacentHTML('afterbegin', '<button type="button" class="btn btn-copy" aria-label="Copy code"></button>');
 }
 
 var clipboard = new Clipboard('.btn-copy', {
 
-  target: function(trigger) {
-    return trigger.nextElementSibling;
+  text: function(trigger) {
+    return trigger.parentElement.textContent;
   },
 
 });
