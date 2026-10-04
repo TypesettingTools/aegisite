@@ -103,6 +103,8 @@ docs-3.5:
 
 # docs-sidebar/changelog
 changelogs:
+  - name: '3.5'
+    weight: -35
   - name: '3.4'
     weight: -34
   - name: '3.2'
