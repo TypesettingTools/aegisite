@@ -28,11 +28,11 @@ outputs:
   section:
     - HTML
     - RSS
-    - SITEMAP
+    - SECTION_SITEMAP
 
-# add output format for section sitemap.xml
+# Keep section sitemaps separate from Hugo's built-in SITEMAP format.
 outputFormats:
-  SITEMAP:
+  SECTION_SITEMAP:
     mediaType: application/xml
     baseName: sitemap
     isHTML: false

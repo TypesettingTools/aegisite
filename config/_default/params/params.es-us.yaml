@@ -79,9 +79,6 @@ footer: >-
 
 # Alert
 alert: false
-alertDismissable: true
-alertText: >-
-  ¡Échele vistazo a la nueva página de Aegisub!
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
