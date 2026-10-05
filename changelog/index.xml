@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Changelogs on Aegisub</title><link>https://aegisub.org/changelog/</link><description>Recent content in Changelogs on Aegisub</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://aegisub.org/changelog/index.xml" rel="self" type="application/rss+xml"/><item><title>3.4.2</title><link>https://aegisub.org/changelog/3.4.2/</link><pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate><guid>https://aegisub.org/changelog/3.4.2/</guid><description>&lt;h3 id="internationalization"&gt;Internationalization &lt;a href="#internationalization" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Changelogs on Aegisub</title><link>https://aegisub.org/changelog/</link><description>Recent content in Changelogs on Aegisub</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://aegisub.org/changelog/index.xml" rel="self" type="application/rss+xml"/><item><title>3.5.0</title><link>https://aegisub.org/changelog/3.5.0/</link><pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate><guid>https://aegisub.org/changelog/3.5.0/</guid><description>&lt;h3 id="video"&gt;Video &lt;a href="#video" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow panning the video display using middle-click dragging or Shift+Scroll, as well as zooming it using Ctrl+Scroll or touchpad gestures.
+The behavior of scrolling while holding Control, Shift, or no modifier can be configured in the settings, e.g. to make touchpad scrolling map to panning without holding Shift.
+There is also a command to reset the pan.&lt;/li&gt;
+&lt;li&gt;Add a way to copy or save the rendered subtitles as an image with a transparent background.&lt;/li&gt;
+&lt;li&gt;Show the video&amp;rsquo;s color space in the Video Details dialog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="script-resolution-and-color-matrix"&gt;Script Resolution and Color Matrix &lt;a href="#script-resolution-and-color-matrix" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the ability to edit an .ass file&amp;rsquo;s &lt;code&gt;LayoutRes&lt;/code&gt; headers, and properly adjust them when resampling resolution.&lt;/li&gt;
+&lt;li&gt;Show prompts when a file&amp;rsquo;s &lt;code&gt;PlayRes&lt;/code&gt;, &lt;code&gt;LayoutRes&lt;/code&gt;, or &lt;code&gt;YCbCr Matrix&lt;/code&gt; is unset or may need to be updated to reflect a new video file.
+All prompts can be enabled or disabled in the settings, but the defaults should catch all the common instances where action needs to be taken while not annoying the user when the headers can stay as is.
+In particular, there is no real need for a subtitle file&amp;rsquo;s &lt;code&gt;PlayRes&lt;/code&gt; and &lt;code&gt;LayoutRes&lt;/code&gt; to match the video&amp;rsquo;s resolution, as long as the aspect ratios match.
+Each prompt has a help button linking to the relevant documentation.&lt;/li&gt;
+&lt;li&gt;Warn when a video&amp;rsquo;s color matrix is untagged, and when a video is HDR or uses a wide color gamut.&lt;/li&gt;
+&lt;li&gt;Add a &amp;ldquo;From Video&amp;rdquo; button for the &lt;code&gt;YCbCr Matrix&lt;/code&gt; in the script properties, and stop setting &lt;code&gt;YCbCr Matrix: None&lt;/code&gt; for new files.&lt;/li&gt;
+&lt;li&gt;When resampling, no longer scale &lt;code&gt;\blur&lt;/code&gt; and &lt;code&gt;\be&lt;/code&gt;, and do not quantize drawing coordinates more coarsely than necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="audio"&gt;Audio &lt;a href="#audio" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rework the &amp;ldquo;current video position&amp;rdquo; marker in the audio display to allow safely snapping subtitle lines to it.
+The marker now shows a white line at the current video frame&amp;rsquo;s exact start time, which can be used to visually judge whether a subtitle line is visible on the current frame.
+Additionally, two semi-transparent areas (with configurable colors and transparency) are drawn to indicate the durations of the previous and current frames, and subtitle times can be snapped to the &lt;em&gt;middle&lt;/em&gt; of either of the areas.&lt;/li&gt;
+&lt;li&gt;Add hotkeyable commands to scroll the audio display to the start or end of the current line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="editing"&gt;Editing &lt;a href="#editing" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add syntax highlighting for drawings and vector clips.&lt;/li&gt;
+&lt;li&gt;Allow inserting a hard space (&lt;code&gt;\h&lt;/code&gt;) in the subtitle edit box using Ctrl+Shift+Space on Windows and Linux and Option+Space on macOS.&lt;/li&gt;
+&lt;li&gt;Add an option to make Shift+Enter add a &lt;code&gt;\n&lt;/code&gt; rather than &lt;code&gt;\N&lt;/code&gt; in the subtitle edit box.
+&lt;code&gt;\n&lt;/code&gt; only inserts a line break when the line&amp;rsquo;s wrap style is &lt;code&gt;2&lt;/code&gt; (i.e. manual wrapping), and does nothing when automatic line wrapping is enabled.
+This can be used to insert explicit line breaks but allow viewers to disable them by setting a style override for the script&amp;rsquo;s &lt;code&gt;WrapStyle&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Allow binding the individual modes of the visual vector clip tool to hotkeys.&lt;/li&gt;
+&lt;li&gt;Add a handful of features to the style editor:
+&lt;ul&gt;
+&lt;li&gt;Allow higher decimal precision for some style parameters.&lt;/li&gt;
+&lt;li&gt;Allow setting the style&amp;rsquo;s font encoding to &lt;code&gt;-1&lt;/code&gt;.
+This is a libass-only feature that can make text layout for right-to-left and bidirectional text easier.
+Being a libass-only feature, it should not be used for distributed softsubs, but can be used when hardsubbing.&lt;/li&gt;
+&lt;li&gt;Allow setting the style&amp;rsquo;s border style to &lt;code&gt;4&lt;/code&gt;.
+This is a libass-only feature that draws an opaque box around the entire event rather than drawing one box per line.
+The same advice about libass-only features as for the previous point also applies here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fix Unicode whitespace handling in the translation assistant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fonts-collector"&gt;Fonts Collector &lt;a href="#fonts-collector" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Make the fonts collector on Windows faster and more reliable.&lt;/li&gt;
+&lt;li&gt;Fix the handling of style resets (&lt;code&gt;\r&lt;/code&gt;) and &lt;code&gt;\fn0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Group the fonts collector&amp;rsquo;s usage messages to make its output easier to read.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="automation"&gt;Automation &lt;a href="#automation" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prompt the user before loading a subtitle file&amp;rsquo;s associated automation scripts.&lt;/li&gt;
+&lt;li&gt;Update the bundled MoonScript to 0.7.0.&lt;/li&gt;
+&lt;li&gt;Deprecate the &lt;code&gt;luabins&lt;/code&gt; Lua library, which, to our knowledge, has never actually been used by any existing automation script.&lt;/li&gt;
+&lt;li&gt;Stop bundling Yutils, luajson, and the ffi-experiments libraries with DependencyControl in the Windows installer.
+DependencyControl now installs these, or its own equivalents, on demand.&lt;/li&gt;
+&lt;li&gt;Make &lt;code&gt;lfs.dir&lt;/code&gt; raise an error when the directory cannot be opened, matching the behavior of the standard &lt;code&gt;lfs&lt;/code&gt; library.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;lfs.attributes&lt;/code&gt; not seeing directories with non-ASCII characters in their name on Windows.&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;util.deep_copy&lt;/code&gt; for tables with circular references.&lt;/li&gt;
+&lt;li&gt;Fix memory leaks in &lt;code&gt;clipboard.get&lt;/code&gt; and when &lt;code&gt;re.compile&lt;/code&gt; fails.&lt;/li&gt;
+&lt;li&gt;Fix crashes when computing text metrics (e.g. in karaoke templaters) on Linux and macOS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="security"&gt;Security &lt;a href="#security" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This release fixes &lt;a href="https://github.com/TypesettingTools/Aegisub/security/advisories/GHSA-67hq-5vgg-6f23"&gt;CVE-2026-92705&lt;/a&gt;: opening a crafted subtitle file could run arbitrary code through Automation scripts it references.
+Aegisub now asks before loading a subtitle file&amp;rsquo;s associated Automation scripts.
+Thanks to shavitush for reporting it.&lt;/p&gt;</description></item><item><title>3.4.2</title><link>https://aegisub.org/changelog/3.4.2/</link><pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate><guid>https://aegisub.org/changelog/3.4.2/</guid><description>&lt;h3 id="internationalization"&gt;Internationalization &lt;a href="#internationalization" class="anchor" aria-hidden="true"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix more locale-dependent path issues&lt;/li&gt;
 &lt;li&gt;Discard MRU entries with invalid encodings instead of crashing&lt;/li&gt;
