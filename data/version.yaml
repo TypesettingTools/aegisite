@@ -1,5 +1,5 @@
-current: 3.4.2
-release_date: 2025-01-12
+current: 3.5.0
+release_date: 2026-10-04
 
 previous_versions:
  - version: 1.07.0
@@ -871,3 +871,40 @@ previous_versions:
       link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.4.2/Aegisub-3.4.2.tar.gz
       md5: d60c9942d1c211b266e29fdde689e3e8
       sha512: ecc455c8f141c77840d23c9fb436d549b22ad28f9e78b25f356f27ae737a9bca300258fbe99cb59eae1da58dd03284ff82b0c4105df7a9190455b425d9917190
+
+ - version: 3.5.0
+   svnRevision: 9890
+   artifacts:
+    - filename: Aegisub-3.5.0-x64.exe
+      type: Windows
+      notes: Regular Install
+      link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.0/Aegisub-3.5.0-x64.exe
+      md5: ded00527495b9bcf4db8470fad96311c
+      sha512: baffd4ec13f3eceacc21fc7c04b17de79150a7a02905830a36b35f6015baac20e08e0a9a12f475d5b8c0f959d9c6040dafb50b51677852612915b6b4573c4b1d
+
+    - filename: Aegisub-3.5.0-arm64.dmg
+      type: OS X
+      notes: Apple Silicon
+      link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.0/Aegisub-3.5.0-arm64.dmg
+      md5: 85fc33126da7f5186560d1d415fdbd11
+      sha512: e30bfe2a96479a93c66f8bcd649d3cd4bc5a9dc0b8c4fc075448b2bbcf58293d5a5c0b606470b51a00445f44488f97be86ea644d702b9ddfb1819b07df82aea7
+
+    - filename: Aegisub-3.5.0-x64.dmg
+      type: OS X
+      notes: Intel
+      link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.0/Aegisub-3.5.0-x64.dmg
+      md5: 57c02321ac1dc37361dfb34614430fc6
+      sha512: a779e6206d57832aa3222774be9e93f37cccab7b9e97732c2c3b6a8bcfcce1e60d18b799e779eb3ec4aa0f5af91543a6bb2bb3b0cdd7103077de4b61a90b9d5b
+
+    - filename: Aegisub-3.5.0-x64-portable.zip
+      type: Windows
+      notes: Portable
+      link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.0/Aegisub-3.5.0-x64-portable.zip
+      md5: 1b302cc569222229d833ef615343a91a
+      sha512: f876d8c7229bdb30b1225f933b8cbab6baf97ac61e23f674fda2f9a39b08bb0882f3cee24d6d3ece6c1458577defaca6c7e1147697056fe65c26ac6877cdb879
+
+    - filename: Aegisub-3.5.0.tar.xz
+      type: Source
+      link: https://github.com/TypesettingTools/Aegisub/releases/download/v3.5.0/Aegisub-3.5.0.tar.xz
+      md5: 79f76dc5273da66a4616e8a59ee03c05
+      sha512: 3e052f061e91668afa426c20bfc448b7651b3e90a5656fac7b12b0e41cee90342a148b732fb7c2ec3dc4c8c5e4506b78dcbf3cd47e827b67a40d7453d0a3cf7a
