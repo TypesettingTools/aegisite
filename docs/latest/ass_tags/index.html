@@ -371,8 +371,8 @@ e.g.:</p><pre><code class=language-plaintext>\pbo-50
 </code></pre><p>(Draws everything 50 pixels above specified)</p><pre><code class=language-plaintext>\pbo100
 </code></pre><p>(Draws everything 100 pixels below specified)</p><h2 id=drawing-commands>Drawing commands <a href=#drawing-commands class=anchor aria-hidden=true>#</a></h2><p>These commands should appear either in a \clip tag (vectorial overload) or
 between \p# and \p0, outside override blocks. For example (taken straight
-from the ASS specs):</p><ul><li><p>Square:</p><pre><code class=language-ass>{\\p1}m 0 0 l 100 0 100 100 0 100{\\p0}
-</code></pre></li><li><p>Rounded square:</p><pre><code class=language-ass>{\\p1}m 0 0 s 100 0 100 100 0 100 c{\\p0}
+from the ASS specs):</p><ul><li><p>Square:</p><pre><code class=language-ass>{\p1}m 0 0 l 100 0 100 100 0 100{\p0}
+</code></pre></li><li><p>Rounded square:</p><pre><code class=language-ass>{\p1}m 0 0 s 100 0 100 100 0 100 c{\p0}
 </code></pre><p>(c equals to &ldquo;p 0 0 100 0 100 100&rdquo; in this case)</p></li><li><p>Circle (almost):</p><pre><code class=language-ass>{\p1}m 50 0 b 100 0 100 100 50 100 b 0 100 0 0 50 0{\p0}
 </code></pre><p>(note that the 2nd &lsquo;b&rsquo; is optional here)</p></li></ul><p>Drawing commands use the primary color for fill and outline color for borders.
 They also display shadow. The idea of drawing vectors is that there is an
