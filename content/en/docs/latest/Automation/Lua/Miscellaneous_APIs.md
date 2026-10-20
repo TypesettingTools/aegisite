@@ -21,6 +21,18 @@ that have been made in it.
 
 This function never returns.
 
+## aegisub.set_status_text
+
+Synopsis: `aegisub.set_status_text(text)`
+
+Show **text** in the main window's status bar. It's cleared again after ten
+seconds.
+
+`@text` (`string`)
+: The text to show.
+
+This does nothing when there's no main window to show the text in.
+
 ## aegisub.text_extents
 
 Synopsis: `width, height, descent, ext_lead = aegisub.text_extents(style, text)`
