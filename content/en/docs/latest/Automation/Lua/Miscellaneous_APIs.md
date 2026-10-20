@@ -82,6 +82,45 @@ Aegisub it may be useful.
 Note that in the bundled macros this is always aliased to `tr` for the sake
 of the string extractor.
 
+## aegisub.version
+
+Synopsis: `version = aegisub.version`
+
+A table describing the version of Aegisub the script is running in. Added
+in 3.5.1, so scripts that need to run in older versions should check that
+it exists first.
+
+`string` (`string`)
+: The full version string, e.g. `"3.5.1"` for a release or
+  `"9900-master-4e440a614"` for a development build. Use it for display and
+  logging only; its format may change.
+
+`major`, `minor`, `patch` (`number`)
+: The version numbers of the latest release this version of Aegisub was
+  built from (or of the release being prepared). A development build made
+  after 3.5.1 reports 3.5.1, so it is safe to use these to check that the
+  features of a given release are available.
+
+`build` (`number` or `nil`)
+: The build number, which increases with every commit to Aegisub's main
+  branch. It can be used to check for features which were added after the
+  latest release, but is only meaningful for official builds: other branches
+  and forks may number their builds differently. `nil` if unknown.
+
+Wherever possible, check for the specific feature you need instead, e.g.
+`if aegisub.some_function then`. The version is mainly useful for changes
+that can't be detected that way, such as new optional arguments.
+
+```lua
+local function at_least(major, minor, patch)
+    local v = aegisub.version
+    if not v then return false end -- 3.5.0 or older
+    if v.major ~= major then return v.major > major end
+    if v.minor ~= minor then return v.minor > minor end
+    return v.patch >= patch
+end
+```
+
 ## Getting information on the video
 
 Automation 4 Lua offers two functions designed to be able to work with
