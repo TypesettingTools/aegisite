@@ -138,6 +138,12 @@ its ending time. The ending time of a frame is the beginning time of the
 next. The beginning time of a frame is included in the range while the
 ending time is excluded from the range.
 
+These functions convert between frames and *subtitle times* rather than
+exact frame timestamps. A line is displayed on every frame that begins within
+the line, so a line that starts after the beginning of the previous frame, up
+to and including the beginning of a frame, first appears on that frame. This
+is the same conversion Aegisub itself uses when timing lines to video.
+
 ### aegisub.frame_from_ms
 
 Synopsis: `frame = aegisub.frame_from_ms(ms)`
@@ -150,11 +156,13 @@ Use loaded frame rate data to convert an absolute time given in
   which to determine the frame number.
 
 `frame` (`number`)
-: Frame number corresponding to the time in ms, or `nil` if there is no
-  frame rate data loaded.
+: The first frame a line starting at `ms` is displayed on, i.e. the first
+  frame that begins at or after `ms`, or `nil` if there is no frame rate data
+  loaded.
 
-If the time is in the middle of the frame it is **rounded down** to the frame
-number that contains the given time.
+If the time is in the middle of a frame it is **rounded up** to the next
+frame. For a line's end time, this gives the first frame the line is no
+longer displayed on.
 
 ### aegisub.ms_from_frame
 
@@ -164,15 +172,20 @@ Use loaded frame rate data to convert a **frame** number of the video into
 an absolute time in **milliseconds**.
 
 `@frame` (`number`)
-: Frame to obtain the beginning time of.
+: Frame to obtain a time for.
 
 `ms` (`number`)
-: First integer millisecond time stamp to lie within the frame, or `nil` if
-  there is no frame rate data loaded.
+: A time at which a line starting there is first displayed on `frame`, or
+  `nil` if there is no frame rate data loaded.
 
-Because beginning times of frames can have better precision than one
-millisecond this function rounds up and returns the first whole millisecond
-that is guaranteed to be within the frame.
+This is halfway between the beginnings of the previous frame and of `frame`,
+not the beginning of `frame` itself. For example, at 23.976 fps frame 24
+begins at 1001 ms, but `aegisub.ms_from_frame(24)` returns 980. The margin
+means the time still lands on the right frame after being rounded to the
+centiseconds subtitle files store, at frame rates up to 100 fps (above that,
+frames are shorter than a centisecond). The two functions also round-trip:
+`aegisub.frame_from_ms(aegisub.ms_from_frame(frame))` is always `frame`.
+Using the result as a line's end time makes the line disappear on `frame`.
 
 ### aegisub.video_size
 
