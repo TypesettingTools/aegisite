@@ -136,8 +136,10 @@ an absolute time in **milliseconds**.
 : Frame to obtain a time for.
 
 `ms` (`number`)
-: A time at which a line starting there is first displayed on `frame`, or
-  `nil` if there is no frame rate data loaded.
+: The start time that a subtitle line should have if it is supposed to first
+  become visible at the frame `frame`. This is also the end time that a
+  subtitle line should have if it is supposed to first become *in*visible at
+  the frame `frame`. If no frame rate data is loaded, returns `nil`.
 
 This is halfway between the beginnings of the previous frame and of `frame`,
 not the beginning of `frame` itself. For example, at 23.976 fps frame 24
@@ -146,7 +148,6 @@ means the time still lands on the right frame after being rounded to the
 centiseconds subtitle files store, at frame rates up to 100 fps (above that,
 frames are shorter than a centisecond). The two functions also round-trip:
 `aegisub.frame_from_ms(aegisub.ms_from_frame(frame))` is always `frame`.
-Using the result as a line's end time makes the line disappear on `frame`.
 
 ### aegisub.video_size
 
