@@ -95,15 +95,27 @@ one-dimensional time line, a time stamp is a point on the time line, while
 a video frame spans a range of the time line, from its beginning time to
 its ending time. The ending time of a frame is the beginning time of the
 next. The beginning time of a frame is included in the range while the
-ending time is excluded from the range.</p><h3 id=aegisubframe_from_ms>aegisub.frame_from_ms <a href=#aegisubframe_from_ms class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>frame = aegisub.frame_from_ms(ms)</code></p><p>Use loaded frame rate data to convert an absolute time given in
+ending time is excluded from the range.</p><p>These functions convert between frames and <em>subtitle times</em> rather than
+exact frame timestamps. A line is displayed on every frame that begins within
+the line, so a line that starts after the beginning of the previous frame, up
+to and including the beginning of a frame, first appears on that frame. This
+is the same conversion Aegisub itself uses when timing lines to video.</p><h3 id=aegisubframe_from_ms>aegisub.frame_from_ms <a href=#aegisubframe_from_ms class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>frame = aegisub.frame_from_ms(ms)</code></p><p>Use loaded frame rate data to convert an absolute time given in
 <strong>milliseconds</strong> into a <strong>frame</strong> number.</p><dl><dt><code>@ms</code> (<code>number</code>)</dt><dd>Absolute time from the beginning of the video, for
-which to determine the frame number.</dd><dt><code>frame</code> (<code>number</code>)</dt><dd>Frame number corresponding to the time in ms, or <code>nil</code> if there is no
-frame rate data loaded.</dd></dl><p>If the time is in the middle of the frame it is <strong>rounded down</strong> to the frame
-number that contains the given time.</p><h3 id=aegisubms_from_frame>aegisub.ms_from_frame <a href=#aegisubms_from_frame class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>ms = aegisub.ms_from_frame(frame)</code></p><p>Use loaded frame rate data to convert a <strong>frame</strong> number of the video into
-an absolute time in <strong>milliseconds</strong>.</p><dl><dt><code>@frame</code> (<code>number</code>)</dt><dd>Frame to obtain the beginning time of.</dd><dt><code>ms</code> (<code>number</code>)</dt><dd>First integer millisecond time stamp to lie within the frame, or <code>nil</code> if
-there is no frame rate data loaded.</dd></dl><p>Because beginning times of frames can have better precision than one
-millisecond this function rounds up and returns the first whole millisecond
-that is guaranteed to be within the frame.</p><h3 id=aegisubvideo_size>aegisub.video_size <a href=#aegisubvideo_size class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>xres, yres, ar, artype = aegisub.video_size()</code></p><p>Get information about the resolution and aspect-ratio of the loaded video,
+which to determine the frame number.</dd><dt><code>frame</code> (<code>number</code>)</dt><dd>The first frame a line starting at <code>ms</code> is displayed on, i.e. the first
+frame that begins at or after <code>ms</code>, or <code>nil</code> if there is no frame rate data
+loaded.</dd></dl><p>If the time is in the middle of a frame it is <strong>rounded up</strong> to the next
+frame. For a line&rsquo;s end time, this gives the first frame the line is no
+longer displayed on.</p><h3 id=aegisubms_from_frame>aegisub.ms_from_frame <a href=#aegisubms_from_frame class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>ms = aegisub.ms_from_frame(frame)</code></p><p>Use loaded frame rate data to convert a <strong>frame</strong> number of the video into
+an absolute time in <strong>milliseconds</strong>.</p><dl><dt><code>@frame</code> (<code>number</code>)</dt><dd>Frame to obtain a time for.</dd><dt><code>ms</code> (<code>number</code>)</dt><dd>The start time that a subtitle line should have if it is supposed to first
+become visible at the frame <code>frame</code>. This is also the end time that a
+subtitle line should have if it is supposed to first become <em>in</em>visible at
+the frame <code>frame</code>. If no frame rate data is loaded, returns <code>nil</code>.</dd></dl><p>This is halfway between the beginnings of the previous frame and of <code>frame</code>,
+not the beginning of <code>frame</code> itself. For example, at 23.976 fps frame 24
+begins at 1001 ms, but <code>aegisub.ms_from_frame(24)</code> returns 980. The margin
+means the time still lands on the right frame after being rounded to the
+centiseconds subtitle files store, at frame rates up to 100 fps (above that,
+frames are shorter than a centisecond). The two functions also round-trip:
+<code>aegisub.frame_from_ms(aegisub.ms_from_frame(frame))</code> is always <code>frame</code>.</p><h3 id=aegisubvideo_size>aegisub.video_size <a href=#aegisubvideo_size class=anchor aria-hidden=true>#</a></h3><p>Synopsis: <code>xres, yres, ar, artype = aegisub.video_size()</code></p><p>Get information about the resolution and aspect-ratio of the loaded video,
 if any.</p><dl><dt><code>xres</code> (<code>number</code>)</dt><dd>Coded width of the video in pixels, or <code>nil</code> if there is no video loaded.</dd><dt><code>yres</code> (<code>number</code>)</dt><dd>Coded height of the video in pixels, or <code>nil</code> if there is no video loaded.</dd><dt><code>ar</code> (<code>number</code>)</dt><dd>Custom display aspect ratio override. Meaningless unless <code>artype</code> is 4.</dd><dt><code>artype</code> (<code>number</code>)</dt><dd>There are 5 values that <code>artype</code> can take:<ul><li>0: The video has square pixels, i.e. PAR is 1.00 and DAR is <code>xres</code>/<code>yres</code>.</li><li>1: The video is 4:3, i.e. DAR is 1.33.</li><li>2: The video is 16:9, i.e. DAR is 1.78.</li><li>3: The video is 2.35 format, i.e. DAR is 2.35.</li><li>4: The DAR is whatever the <code>ar</code> return value contains.</li></ul></dd></dl><h3 id=aegisubkeyframes>aegisub.keyframes <a href=#aegisubkeyframes class=anchor aria-hidden=true>#</a></h3><p>Synopsis <code>keyframes = aegisub.keyframes()</code></p><p>Get a list of what video frames are keyframes.</p><dl><dt><code>keyframes</code> (<code>table</code>)</dt><dd>A sorted table where each entry is the frame number of a keyframe. If
 no keyframe data is loaded, the table will be empty.</dd></dl><h2 id=aegisubdecode_path>aegisub.decode_path <a href=#aegisubdecode_path class=anchor aria-hidden=true>#</a></h2><p>Synopsis <code>path = aegisub.decode_path(encoded_path)</code></p><p>Convert a path beginning with a <a href=/docs/latest/aegisub_path_specifiers/>path specifier</a>
 to an absolute path.</p><dl><dt><code>@encoded_path</code> (<code>string</code>)</dt><dd>A string which may optionally begin with an Aegisub <a href=/docs/latest/aegisub_path_specifiers/>path specifier</a>.</dd><dt><code>@path</code> (<code>string</code>)</dt><dd>If <code>encoded_path</code> began with a valid <a href=/docs/latest/aegisub_path_specifiers/>path specifier</a>, an absolute path. If it began with an
